@@ -1,0 +1,32 @@
+[user]
+	email = a.regenfuss@gmx.de
+	name = scharlatan
+[core]
+	editor = ed
+
+[alias]
+	ds="diff --staged"
+	dds="diff --staged --stat"
+
+	ad="add ."
+
+	rc="rm --cached"
+
+	br="branch"
+
+	co="checkout"
+	cm="checkout master"
+
+	tl="tag -l -n4"
+	ta="tag -a"
+
+	lm="log --pretty=oneline"
+	ls="log --pretty=oneline --stat"
+	la="log --pretty=oneline --stat --graph"
+
+	st="status"
+
+	ca="commit --amend"
+	com="commit"
+
+	praise="blame"

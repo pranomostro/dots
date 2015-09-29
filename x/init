@@ -1,0 +1,3 @@
+DISPLAY=":0"
+xmodmap /home/adrian/.kb/neo.xmodmap
+exec awesome
