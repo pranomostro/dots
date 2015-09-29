@@ -126,6 +126,10 @@ function pn
 	rlwrap pn $argv
 end
 
+function shirka
+	rlwrap shirka $argv
+end
+
 #Just to troll a little bit
 function emacs
 	ed -r -s
