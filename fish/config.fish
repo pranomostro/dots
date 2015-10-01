@@ -107,27 +107,27 @@ end
 #rlwrap is great
 
 function mira
-	rlwrap mira $argv
+	rlwrap -s 1000000 mira $argv
 end
 
 function rc
-	rlwrap rc $argv
+	rlwrap -s 1000000 rc $argv
 end
 
 function ed
-	rlwrap ed $argv
+	rlwrap -s 1000000 ed $argv
 end
 
 function tl
-	rlwrap tl $argv
+	rlwrap -s 1000000 tl $argv
 end
 
 function pn
-	rlwrap pn $argv
+	rlwrap -s 1000000 pn $argv
 end
 
 function shirka
-	rlwrap shirka $argv
+	rlwrap -s 1000000 shirka $argv
 end
 
 #Just to troll a little bit

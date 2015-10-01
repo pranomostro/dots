@@ -22,7 +22,8 @@
 
 	lm="log --pretty=oneline"
 	ls="log --pretty=oneline --stat"
-	la="log --pretty=oneline --stat --graph"
+	la="log --pretty=oneline --stat --graph --abbrev-commit"
+	lf="log --pretty=oneline --graph --abbrev-commit"
 
 	st="status"
 

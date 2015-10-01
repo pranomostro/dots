@@ -1,0 +1,13 @@
+#!/bin/sh
+
+XRESOURCES="/home/adrian/.xresources"
+
+if [ -f "$XRESOURCES" ]; then
+	xrdb "$XRESOURCES"
+fi
+
+xmodmap /home/adrian/.config/kb/neo.xmodmap
+
+sxhkd -c /home/adrian/.config/sxhkd/sxhkdrc &
+
+exec sh -c 'while :; do sleep 10; done'
