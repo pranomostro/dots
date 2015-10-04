@@ -8,6 +8,8 @@ fi
 
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
-sxhkd -c /home/adrian/.config/sxhkd/sxhkdrc &
+sxhkd -c /home/adrian/.sxhkdrc &
+
+~/.fehbg &
 
 exec sh -c 'while :; do sleep 10; done'
