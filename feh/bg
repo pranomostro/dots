@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --image-bg black --bg-center '/usr/share/awesome/themes/default/bg2.jpg'
+feh  --image-bg black --bg-center '/usr/share/awesome/themes/default/bg2.jpg' 
