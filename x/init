@@ -16,4 +16,4 @@ sxhkd -c /home/adrian/.sxhkdrc &
 
 ~/.fehbg &
 
-exec sh -e "while :; do sleep 10; done"
+exec sh -c 'while :; do sleep 10; done'
