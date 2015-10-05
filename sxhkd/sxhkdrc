@@ -1,3 +1,0 @@
-#very minimal configuration file for sxhkd
-mod4 + Return
-	st -g 80x32+200+200
