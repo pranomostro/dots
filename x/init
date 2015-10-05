@@ -6,10 +6,14 @@ if [ -f "$XRESOURCES" ]; then
 	xrdb "$XRESOURCES"
 fi
 
+xsetroot -name geb
+xsetroot -cursor_name left_ptr
+
+
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
 sxhkd -c /home/adrian/.sxhkdrc &
 
 ~/.fehbg &
 
-exec sh -c 'while :; do sleep 10; done'
+exec xwait
