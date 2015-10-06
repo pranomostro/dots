@@ -12,6 +12,8 @@ xsetroot -cursor_name left_ptr
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
 focus_watcher &
+wew | yawee &
+
 sxhkd -c /home/adrian/.sxhkdrc &
 
 ~/.fehbg &
