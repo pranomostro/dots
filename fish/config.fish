@@ -152,7 +152,7 @@ function fish_greeting
 end
 
 function fish_prompt
-	set_color 999999
+	set_color 444444
 
 	echo -n (pwd)
 
