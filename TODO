@@ -1,2 +1,4 @@
 -install a serif typeface
 -'h' for resizing the current window after the golden ratio
+-fix focussing issue (focussing is totally irregular)
+-fix not-working firefox
