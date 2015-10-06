@@ -1,8 +1,8 @@
 #very minimal configuration file for sxhkd
 mod4 + Return
-	st
+	st -g +10+10
 mod4 + space
-	dmenu
+	dmenu_run
 mod4 + q
 	pkill Xorg
 
@@ -10,6 +10,9 @@ mod4 + q
 
 mod4 + {n, r, t, d}
 	wmv {-10 0,0 +10, 0 -10, +10 0} $(pfw)
+mod4 + shift + {n, r, t, d}
+	wrs {-10 0, 0 +10, 0 -10, +10 0} $(pfw)
+
 mod4 + {u, i, a, e}
 	closest {west, south, north, east}
 mod4 + {o, s}
@@ -24,3 +27,6 @@ mod4 + w
 	tile
 mod4 + f
 	fullscreen $(pfw)
+
+mod4 + !button{1,3}
+	{wmv,wrs} -a %i %i $(pfw)
