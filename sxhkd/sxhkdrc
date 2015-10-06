@@ -13,7 +13,7 @@ mod4 + q
 mod4 + {n, r, t, d}
 	wmv {-10 0,0 +10, 0 -10, +10 0} $(pfw)
 mod4 + {u, i, a, e}
-	closest {west, north, south, east}
+	closest {west, south, north, east}
 mod4 + {o, s}
 	wsch {1.05, 0.95} $(pfw)
 mod4 + c
