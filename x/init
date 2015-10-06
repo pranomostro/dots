@@ -9,9 +9,9 @@ fi
 xsetroot -name geb
 xsetroot -cursor_name left_ptr
 
-
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
+focus_watcher &
 sxhkd -c /home/adrian/.sxhkdrc &
 
 ~/.fehbg &
