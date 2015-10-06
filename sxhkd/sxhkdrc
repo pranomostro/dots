@@ -1,3 +1,25 @@
 #very minimal configuration file for sxhkd
 mod4 + Return
-	st -g 80x32+200+200
+	st
+
+mod4 + space
+	dmenu
+
+mod4 + q
+	pkill Xorg
+
+#wmutils related stuff
+mod4 + {n, r, t, d}
+	wmv {-10 0,0 +10, 0 -10, +10 0} $(pfw)
+
+mod4 + {u, i, a, e}
+	focus {west, north, south, east} $(pfw)
+
+mod4 + {o, s}
+	wsch {1.05, 0.95} $(pfw)
+
+mod4 + c
+	cnt $(pfw)
+
+mod4 + b
+	beau $(pfw)
