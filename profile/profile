@@ -45,7 +45,7 @@ PATH=$PATH:$PLAN9/bin
 
 #variables for wmutils
 export ACTIVE=0xffb405
-export INACTIVE=0xff8e05
+export INACTIVE=0x6b0bbf
 export BW=4
 
 export PLAN9
