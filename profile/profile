@@ -43,6 +43,11 @@ PATH=":"$PATH
 PLAN9=/usr/local/plan9
 PATH=$PATH:$PLAN9/bin
 
+#variables for wmutils
+export ACTIVE=0xffb405
+export INACTIVE=0xff8e05
+export BW=4
+
 export PLAN9
 export PATH
 

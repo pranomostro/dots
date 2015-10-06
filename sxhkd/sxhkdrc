@@ -24,6 +24,3 @@ mod4 + w
 	tile
 mod4 + f
 	fullscreen $(pfw)
-
-mod4 + !button{1,3}
-	{wmv, wrs} -a %i %i $(pfw)
