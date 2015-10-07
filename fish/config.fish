@@ -17,7 +17,7 @@ function fortune
 end
 
 function troll
-	fortune /usr/local/share/troll
+	command fortune /usr/local/share/troll
 end
 
 function cl
