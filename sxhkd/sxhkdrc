@@ -13,16 +13,21 @@ mod4 + {n, r, t, d}
 mod4 + shift + {n, r, t, d}
 	wrs {-10 0, 0 +10, 0 -10, +10 0} $(pfw)
 
+#TODO: these do not work
 mod4 + {u, i, a, e}
 	closest {west, south, north, east}
 mod4 + {o, s}
 	wsch {1.05, 0.95} $(pfw)
+
+#these keybindings should be overthought.
 mod4 + k
 	killw $(pfw)
+#these two do not work either
 mod4 + c
 	cnt $(pfw)
 mod4 + h
 	beau $(pfw)
+#has sometimes bugs.
 mod4 + w
 	tile
 mod4 + f
