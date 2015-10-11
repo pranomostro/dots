@@ -20,6 +20,14 @@ function troll
 	command fortune /usr/local/share/troll
 end
 
+function bullshit
+	command bullshit /usr/local/share/bullshit
+end
+
+function pacman
+	command pacman --color always $argv
+end
+
 function cl
 	command ls --color=always --group-directories-first $argv
 end
@@ -36,16 +44,20 @@ function ls
 	command ls -ali --color=never --group-directories-first $argv
 end
 
+function e
+	command ed $argv
+end
+
+function nl
+	command nl -ba $argv
+end
+
 function g
 	grep -E $argv
 end
 
 function rr
 	rm -r $argv
-end
-
-function e
-	command ed $argv
 end
 
 function cs
@@ -92,14 +104,6 @@ function python
 	python2.7 $argv
 end
 
-function pacman
-	command pacman --color always $argv
-end
-
-function bullshit
-	command bullshit /usr/local/share/bullshit
-end
-
 function rm
 	r $argv
 end
@@ -131,6 +135,7 @@ function shirka
 end
 
 #Just to troll a little bit
+
 function emacs
 	ed -r -s
 end
@@ -144,8 +149,10 @@ function vi
 end
 
 function nano
-	sam
+	sam $argv
 end
+
+#prompts
 
 function fish_greeting
 	true
