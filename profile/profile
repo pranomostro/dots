@@ -40,16 +40,16 @@ export PATH_SEPARATOR=:
 
 PATH=$PATH:"/home/adrian/bin/"
 PATH=":"$PATH
-PLAN9=/usr/local/plan9
-PATH=$PATH:$PLAN9/bin
+
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
+export DVTM_TERM=st dvtm
 
 #variables for wmutils
 export ACTIVE=0xffb405
 export INACTIVE=0x6b0bbf
 export BW=4
-
-export PLAN9
-export PATH
 
 bullshit
 
