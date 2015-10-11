@@ -5,8 +5,5 @@ pcm. !defaut {
 
 ctl. !defauld {
 	type hw
-	card 0
+	card 1
 }
-
-defaults.pcm.card 0
-defaults.ctl.card 0
