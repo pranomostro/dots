@@ -40,11 +40,11 @@ export PATH_SEPARATOR=:
 
 PATH=$PATH:"/home/adrian/bin/"
 PATH=":"$PATH
-PLAN9=/usr/local/plan9
-PATH=$PATH:$PLAN9/bin
 
-export PLAN9
-export PATH
+export PLAN9=/usr/local/plan9
+export PATH=$PATH:$PLAN9/bin
+
+export DVTM_TERM=st dvtm
 
 bullshit
 
