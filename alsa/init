@@ -1,9 +1,0 @@
-pcm. !defaut {
-	type hw
-	card 1
-}
-
-ctl. !defauld {
-	type hw
-	card 1
-}
