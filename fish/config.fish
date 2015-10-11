@@ -12,6 +12,8 @@ set -x -g BUG_PROJECT /home/adrian/proj/begun/mset/.bugdb
 set -x -g EDITOR e
 set -x -g VISUAL sam
 
+#command redefinitions
+
 function fortune
 	command fortune /usr/local/plan9/lib/fortunes
 end
@@ -36,16 +38,30 @@ function ls
 	command ls -ali --color=never --group-directories-first $argv
 end
 
-function g
-	grep -E $argv
-end
-
-function rr
-	rm -r $argv
+function nl
+	command nl -ba $argv
 end
 
 function e
 	command ed $argv
+end
+
+function pacman
+	command pacman --color always $argv
+end
+
+function bullshit
+	command bullshit /usr/local/share/bullshit
+end
+
+function rr
+	command rm -r $argv
+end
+
+#"new" commands
+
+function g
+	grep -E $argv
 end
 
 function cs
@@ -92,14 +108,6 @@ function python
 	python2.7 $argv
 end
 
-function pacman
-	command pacman --color always $argv
-end
-
-function bullshit
-	command bullshit /usr/local/share/bullshit
-end
-
 function rm
 	r $argv
 end
@@ -144,8 +152,10 @@ function vi
 end
 
 function nano
-	sam
+	sam $argv
 end
+
+#prompts
 
 function fish_greeting
 	true
