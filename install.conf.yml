@@ -1,0 +1,10 @@
+link: create force!
+    ~/.agignore: ag/ignore
+    ~/.bashrc: bash/init
+    ~/.fehbg: feh/bg
+    ~/.fishrc: fish/config.fish
+    ~/.gitconfig: git/config
+    ~/.mirarc: mira/init
+    ~/.profile: profile/profile
+    ~/.toprc: top/init
+    ~/.xinitrc: x/init
