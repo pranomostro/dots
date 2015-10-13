@@ -8,3 +8,6 @@ link: create force!
 	~/.sxhkdrc: ~/.config/sxhkd/sxhkdrc
 	~/.toprc: ~/.config/top/init
 	~/.xinitrc: ~/.config/x/init
+
+link: create force!
+	/usr/src/st/config.h: comp/stconf.h
