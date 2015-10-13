@@ -6,5 +6,10 @@ link: create force!
     ~/.gitconfig: git/config
     ~/.mirarc: mira/init
     ~/.profile: profile/profile
+    ~/.sxhkdrc: sxhkd/sxhkdrc
     ~/.toprc: top/init
     ~/.xinitrc: x/init
+
+
+link: create force!
+	/usr/src/st/config.h: comp/stconf.h
