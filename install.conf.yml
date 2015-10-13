@@ -10,6 +10,5 @@ link: create force!
     ~/.toprc: top/init
     ~/.xinitrc: x/init
 
-
 link: create force!
 	/usr/src/st/config.h: comp/stconf.h
