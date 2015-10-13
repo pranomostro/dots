@@ -1,18 +1,33 @@
 #msmtp configuration file
+#get a new e-mail address
 defaults
+
+#The problem is the authentification method.
 auth on
 tls on
-tls_trust_file /home/adrian/gmx.pem
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+#This is the other option: /etc/ca-certificates/extracted/cadir/gmx.pem
 tls_starttls on
 logfile ~/.msmtp_history
 
+#test account for gmail
+#this worked
+account gmail
+host smtp.gmail.com
+port 587
+protocol smtp
+from pranomostro@gmail.com
+user pranomostro
+password blablabla
+
 #account settings for gmx
+#authentification fails here
 account gmx
 host mail.gmx.de
 port 587
 from a.regenfuss@gmx.de
 user a.regenfuss
-password @getline42
+password blablabla
 
 #default account
 account default: gmx
