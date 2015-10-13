@@ -1,13 +1,12 @@
 link: create force!
-	~/.agignore: ~/.config/ag/ignore
-	~/.bashrc: ~/.config/bash/init
-	~/.fehbg: ~/.config/feh/bg
-	~/.gitconfig: ~/.config/git/config
-	~/.mirarc: ~/.config/mira/init
-	~/.profile: ~/.config/profile/profile
-	~/.sxhkdrc: ~/.config/sxhkd/sxhkdrc
-	~/.toprc: ~/.config/top/init
-	~/.xinitrc: ~/.config/x/init
+    ~/.agignore: ag/ignore
+    ~/.bashrc: bash/init
+    ~/.fehbg: feh/bg
+    ~/.gitconfig: git/config
+    ~/.mirarc: mira/init
+    ~/.profile: profile/profile
+    ~/.toprc: top/init
+    ~/.xinitrc: x/init
 
 link: create force!
-	/usr/src/st/config.h: comp/stconf.h
+    /usr/src/st/config.h: comp/stconf.h
