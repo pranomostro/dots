@@ -1,0 +1,18 @@
+#msmtp configuration file
+defaults
+auth on
+tls on
+tls_trust_file /home/adrian/gmx.pem
+tls_starttls on
+logfile ~/.msmtp_history
+
+#account settings for gmx
+account gmx
+host mail.gmx.de
+port 587
+from a.regenfuss@gmx.de
+user a.regenfuss
+password @getline42
+
+#default account
+account default: gmx

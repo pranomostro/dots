@@ -4,6 +4,7 @@ link: create force!
     ~/.fehbg: feh/bg
     ~/.gitconfig: git/config
     ~/.mirarc: mira/init
+    ~/.msmtprc: msmtp/init
     ~/.profile: profile/profile
     ~/.toprc: top/init
     ~/.xinitrc: x/init
