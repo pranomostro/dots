@@ -31,3 +31,5 @@
 	com="commit"
 
 	praise="blame"
+[push]
+	default = matching
