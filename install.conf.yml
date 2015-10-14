@@ -1,7 +1,7 @@
 link: create force!
     ~/.agignore: ag/ignore
     ~/.bashrc: bash/init
-    ~/.fishrc: fish/init
+    ~/.fishrc: fish/config.fish
     ~/.gitconfig: git/config
     ~/.msmtprc: msmtp/init
     ~/.profile: profile/profile
