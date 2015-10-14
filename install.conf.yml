@@ -4,7 +4,6 @@ link: create force!
     ~/.fehbg: feh/bg
     ~/.fishrc: fish/config.fish
     ~/.gitconfig: git/config
-    ~/.mirarc: mira/init
     ~/.profile: profile/profile
     ~/.sxhkdrc: sxhkd/sxhkdrc
     ~/.toprc: top/init
