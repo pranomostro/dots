@@ -12,14 +12,20 @@ set -x -g BUG_PROJECT /home/adrian/proj/begun/mset/.bugdb
 set -x -g EDITOR e
 set -x -g VISUAL sam
 
-#command redefinitions
-
 function fortune
 	command fortune /usr/local/plan9/lib/fortunes
 end
 
 function troll
 	command fortune /usr/local/share/troll
+end
+
+function bullshit
+	command bullshit /usr/local/share/bullshit
+end
+
+function pacman
+	command pacman --color always $argv
 end
 
 function cl
@@ -38,30 +44,20 @@ function ls
 	command ls -ali --color=never --group-directories-first $argv
 end
 
-function nl
-	command nl -ba $argv
-end
-
 function e
 	command ed $argv
 end
 
-function pacman
-	command pacman --color always $argv
+function nl
+	command nl -ba $argv
 end
-
-function bullshit
-	command bullshit /usr/local/share/bullshit
-end
-
-function rr
-	command rm -r $argv
-end
-
-#"new" commands
 
 function g
 	grep -E $argv
+end
+
+function rr
+	rm -r $argv
 end
 
 function cs
@@ -114,8 +110,8 @@ end
 
 #rlwrap is great
 
-function mira
-	rlwrap -s 1000000 mira $argv
+function mosml
+	rlwrap -s 1000000 mosml $argv
 end
 
 function rc
@@ -139,6 +135,7 @@ function shirka
 end
 
 #Just to troll a little bit
+
 function emacs
 	ed -r -s
 end
