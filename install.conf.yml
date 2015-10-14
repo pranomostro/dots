@@ -1,4 +1,5 @@
 link: create force!
+    ~/.abduco: abduco
     ~/.agignore: ag/ignore
     ~/.bashrc: bash/init
     ~/.fishrc: fish/config.fish
