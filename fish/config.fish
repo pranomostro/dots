@@ -110,8 +110,8 @@ end
 
 #rlwrap is great
 
-function mira
-	rlwrap -s 1000000 mira $argv
+function mosml
+	rlwrap -s 1000000 mosml $argv
 end
 
 function rc
