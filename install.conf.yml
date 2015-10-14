@@ -2,8 +2,8 @@ link: create force!
     ~/.agignore: ag/ignore
     ~/.bashrc: bash/init
     ~/.fehbg: feh/bg
+    ~/.fishrc: fish/init
     ~/.gitconfig: git/config
-    ~/.mirarc: mira/init
     ~/.msmtprc: msmtp/init
     ~/.profile: profile/profile
     ~/.toprc: top/init
