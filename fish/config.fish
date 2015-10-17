@@ -2,6 +2,8 @@ if status --is-interactive
 
 umask 066
 
+eval thefuck --alias
+
 set -x -g LANG de_DE.UTF-8
 set -x -g PATH_SEPARATOR :
 
