@@ -2,6 +2,8 @@ if status --is-interactive
 
 umask 066
 
+eval thefuck --alias
+
 set -x -g LANG de_DE.UTF-8
 set -x -g PATH_SEPARATOR :
 
@@ -128,6 +130,10 @@ end
 
 function pn
 	rlwrap -s 1000000 pn $argv
+end
+
+function potion
+	pn $argv
 end
 
 function shirka
