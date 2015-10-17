@@ -104,6 +104,10 @@ function python
 	python2.7 $argv
 end
 
+function potion
+	pn $argv
+end
+
 function rm
 	r $argv
 end
