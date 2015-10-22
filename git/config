@@ -2,7 +2,7 @@
 	email = a.regenfuss@gmx.de
 	name = scharlatan
 [core]
-	editor = rlwrap ed
+	editor = ed
 
 [alias]
 	ds="diff --staged"
