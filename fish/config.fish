@@ -184,12 +184,6 @@ function fish_prompt
 	echo -n ' » '
 end
 
-function fish_right_prompt
-	set_color 111111
-	echo "2o "(gawk 'BEGIN { print systime() }')"p q" | dc
-	set_color normal
-end
-
 bu&
 
 end

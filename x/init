@@ -13,8 +13,8 @@ xmodmap /home/adrian/.config/kb/neo.xmodmap
 
 #TODO: these fuck with my workflow.
 #read the code, understand it, fix it.
-focus_watcher &
-wew | yawee &
+focus_watcher.sh &
+wew | yawee.sh &
 
 sxhkd -c /home/adrian/.sxhkdrc &
 
