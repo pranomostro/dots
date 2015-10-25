@@ -9,9 +9,9 @@ mod4 + q
 #wmutils related stuff
 
 mod4 + {n, r, t, d}
-	wmv {-10 0,0 +10, 0 -10, +10 0} $(pfw)
+	wmv {-20 0,0 +20, 0 -20, +20 0} $(pfw)
 mod4 + shift + {n, r, t, d}
-	wrs {-10 0, 0 +10, 0 -10, +10 0} $(pfw)
+	wrs {-20 0, 0 +20, 0 -20, +20 0} $(pfw)
 
 #TODO: these do not work
 mod4 + {u, i, a, e}
