@@ -52,6 +52,10 @@ function nl
 	command nl -ba $argv
 end
 
+function man
+	command man $argv | less
+end
+
 function g
 	grep -E $argv
 end

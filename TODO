@@ -1,3 +1,9 @@
 -install a serif typeface
--fix focussing issue (focussing is totally irregular)
 -fix not-working firefox
+-add mouse handling (for resizing and moving windows)
+-think about the shell background
+-write the wmutils scripts and use them
+-think about the keybindings
+-when a window is created, move it to free space
+	(or at least to 10|10).
+-when a window is deleted, focus on the next one
