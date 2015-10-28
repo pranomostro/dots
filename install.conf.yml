@@ -8,6 +8,7 @@ link: create force!
     ~/.profile: profile/profile
     ~/.toprc: top/init
     ~/.xinitrc: x/init
+    ~/.password-store: passwords
 
 link: create force!
     /usr/src/st/config.h: comp/stconf.h
