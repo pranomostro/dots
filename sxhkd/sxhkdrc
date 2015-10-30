@@ -20,8 +20,6 @@ mod4 + {c, h, p, b}
 	corner {tl, tr, bl, br}
 mod4 + k
 	cnt $(pfw)
-
-#these keybindings should be overthought.
 mod4 + v
 	killw $(pfw)
 mod4 + l
@@ -30,3 +28,7 @@ mod4 + g
 	beau $(pfw)
 mod4 + f
 	fullscreen $(pfw)
+
+#mouse handling
+mod4 + !button{1, 3}
+	{wmv, wrs} -a %i %i $(pfw)
