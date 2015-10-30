@@ -1,6 +1,6 @@
 #very minimal configuration file for sxhkd
 mod4 + Return
-	st -g +10+10
+	st -g +$GAP+$GAP
 mod4 + space
 	dmenu_run
 mod4 + q
@@ -9,9 +9,9 @@ mod4 + q
 #wmutils related stuff
 
 mod4 + {n, r, t, d}
-	wmv {-20 0,0 -20, 0 +20, +20 0} $(pfw)
+	wmv {-$GAP 0,0 -$GAP, 0 +$GAP, +$GAP 0} $(pfw)
 mod4 + shift + {n, r, t, d}
-	wrs {-20 0, 0 -20, 0 +20, +20 0} $(pfw)
+	wrs {-$GAP 0, 0 -$GAP, 0 +$GAP, +$GAP 0} $(pfw)
 
 mod4 + {u, i, a, e}
 	closest.sh {west, south, north, east}
@@ -22,14 +22,10 @@ mod4 + {o, s}
 #these keybindings should be overthought.
 mod4 + k
 	killw $(pfw)
-
-#these two do not work either
 mod4 + c
 	cnt $(pfw)
 mod4 + h
 	beau $(pfw)
-
-#has sometimes bugs.
 mod4 + w
 	tile
 mod4 + f

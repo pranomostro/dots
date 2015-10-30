@@ -50,6 +50,7 @@ export DVTM_TERM=st dvtm
 export ACTIVE=0xffb405
 export INACTIVE=0x6b0bbf
 export BW=4
+export GAP=20
 
 bullshit
 
