@@ -12,21 +12,21 @@ mod4 + {n, r, t, d}
 	wmv {-$GAP 0,0 -$GAP, 0 +$GAP, +$GAP 0} $(pfw)
 mod4 + shift + {n, r, t, d}
 	wrs {-$GAP 0, 0 -$GAP, 0 +$GAP, +$GAP 0} $(pfw)
-
 mod4 + {u, i, a, e}
 	closest.sh {west, south, north, east}
-
 mod4 + {o, s}
 	wsch {1.05, 0.95} $(pfw)
+mod4 + {c, h, p, b}
+	corner {tl, tr, bl, br}
+mod4 + k
+	cnt $(pfw)
 
 #these keybindings should be overthought.
-mod4 + k
+mod4 + v
 	killw $(pfw)
-mod4 + c
-	cnt $(pfw)
-mod4 + h
-	beau $(pfw)
-mod4 + w
+mod4 + l
 	tile
+mod4 + g
+	beau $(pfw)
 mod4 + f
 	fullscreen $(pfw)
