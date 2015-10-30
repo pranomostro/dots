@@ -1,6 +1,6 @@
 #very minimal configuration file for sxhkd
 mod4 + Return
-	st -g +$GAP+$GAP
+	st
 mod4 + space
 	dmenu_run
 mod4 + q
