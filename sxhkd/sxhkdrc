@@ -27,6 +27,6 @@ mod4 + v
 mod4 + l
 	tile
 mod4 + g
-	beau $(pfw)
+	beau h $(pfw)
 mod4 + f
 	fullscreen $(pfw)
