@@ -20,6 +20,8 @@ mod4 + {c, h, p, b}
 	corner {tl, tr, bl, br}
 mod4 + k
 	cnt $(pfw)
+mod4 + w
+	big $(pfw)
 mod4 + v
 	killw $(pfw)
 mod4 + l
