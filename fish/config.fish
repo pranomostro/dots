@@ -8,7 +8,7 @@ set -x -g PATH_SEPARATOR :
 set -x -g PATH /usr/bin /usr/local/bin /home/adrian/bin /usr/local/bin /usr/local/plan9/bin
 set -x -g PLAN9 /usr/local/plan9
 
-set -x -g BUG_PROJECT /home/adrian/proj/begun/mset/.bugdb
+set -x -g BUG_PROJECT /home/adrian/proj/begun/potion/.bugdb
 set -x -g EDITOR e
 set -x -g VISUAL sam
 
