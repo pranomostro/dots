@@ -1,0 +1,8 @@
+pinentry-program /usr/bin/pinentry-curses
+###+++--- GPGConf ---+++###
+default-cache-ttl 0
+max-cache-ttl 0
+###+++--- GPGConf ---+++### Do 18 Jun 2015 23:29:49 CEST
+# GPGConf edited this configuration file.
+# It will disable options before this marked block, but it will
+# never change anything below these lines.
