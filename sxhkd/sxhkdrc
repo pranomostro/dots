@@ -2,7 +2,7 @@
 mod4 + Return
 	st -g +"$GAP"+"$GAP"
 mod4 + space
-	dmenu_run -l 10 -nf black -nb white -sb \#ffb405
+	dmenu_run -l 10 -nf black -nb white -sb \#ffb405 -fn 'Liberation Mono:pixelsize=12:antialias=false:autohint=false'
 mod4 + q
 	pkill Xorg
 

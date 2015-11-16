@@ -8,6 +8,8 @@ link: create force!
     ~/.sxhkdrc: sxhkd/sxhkdrc
     ~/.toprc: top/init
     ~/.xinitrc: x/init
+    ~/.gnupg/gpg-agent.conf: gpg/agentconf
+    ~/.gnupg/gpg.conf: gpg/conf
 
 link: create force!
     /usr/src/st/config.h: comp/stconf.h
