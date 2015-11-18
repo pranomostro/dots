@@ -18,10 +18,6 @@ wew | yawee.sh &
 ~/.fehbg &
 
 #ignore all bars
-for i in $(lsw -a); do
-	if [ $(wname "$i") = 'bar' ]; then
-		ignw -s "$i"
-	fi
-done
+barign &
 
 exec sh -c 'while :; do sleep 10; done'
