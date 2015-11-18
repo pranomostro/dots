@@ -1,2 +1,0 @@
-#!/bin/sh
-feh  --image-bg black --bg-center '/usr/share/wall/hands.jpg' 
