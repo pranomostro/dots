@@ -56,6 +56,10 @@ function man
 	command man $argv | less
 end
 
+function bc
+	command bc -q $argv
+end
+
 function g
 	grep -E $argv
 end
