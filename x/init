@@ -17,4 +17,11 @@ sxhkd -c /home/adrian/.sxhkdrc &
 wew | yawee.sh &
 ~/.fehbg &
 
+#ignore all bars
+for i in $(lsw -a); do
+	if [ $(wname "$i") = 'bar' ]; then
+		ignw -s "$i"
+	fi
+done
+
 exec sh -c 'while :; do sleep 10; done'
