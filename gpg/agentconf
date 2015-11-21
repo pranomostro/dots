@@ -1,6 +1,6 @@
 pinentry-program /usr/bin/pinentry-curses
 ###+++--- GPGConf ---+++###
-default-cache-ttl 0
+default-cache-ttl 600
 max-cache-ttl 0
 ###+++--- GPGConf ---+++### Do 18 Jun 2015 23:29:49 CEST
 # GPGConf edited this configuration file.

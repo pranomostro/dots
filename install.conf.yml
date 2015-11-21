@@ -5,10 +5,12 @@ link: create force!
     ~/.gitconfig: git/config
     ~/.profile: profile/profile
     ~/.sxhkdrc: sxhkd/sxhkdrc
+    ~/.msmtprc: msmtp/config
     ~/.toprc: top/init
     ~/.xinitrc: x/init
     ~/.gnupg/gpg-agent.conf: gpg/agentconf
     ~/.gnupg/gpg.conf: gpg/conf
 
 link: create force!
+    /usr/src/dmc/config.h: comp/dmcconf.h
     /usr/src/st/config.h: comp/stconf.h

@@ -1,0 +1,18 @@
+#global settings
+defaults
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+#gmail account
+account gmail
+host smtp.gmail.com
+port 587
+auth on
+passwordeval gpg2 -d /home/adrian/.password-store/gmail.gpg
+user pranomestro@gmail.com
+from pranomestro@gmail.com
+logfile /tmp/msmtp.log
+
+#set the default account
+account default: gmail
