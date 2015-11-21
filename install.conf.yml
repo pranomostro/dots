@@ -12,5 +12,5 @@ link: create force!
     ~/.gnupg/gpg.conf: gpg/conf
 
 link: create force!
-    /usr/src/dmc/config.h: comp/dmcconf.h
-    /usr/src/st/config.h: comp/stconf.h
+    /usr/src/dmc/config.h: comp/dmcconf.def.h
+    /usr/src/st/config.h: comp/stconf.def.h
