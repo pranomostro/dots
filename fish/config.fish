@@ -1,3 +1,5 @@
+#TODO: move the functions to functions.fish
+
 if status --is-interactive
 
 umask 066
@@ -113,10 +115,6 @@ function python
 	python2.7 $argv
 end
 
-function potion
-	pn $argv
-end
-
 function rm
 	r $argv
 end
@@ -140,7 +138,11 @@ function tl
 end
 
 function pn
-	rlwrap -s 1000000 pn $argv
+	rlwrap -s 1000000 (which potion) $argv
+end
+
+function potion
+	rlwrap -s 1000000 (which potion) $argv
 end
 
 function shirka
