@@ -20,4 +20,7 @@ wew | yawee.sh &
 #ignore all bars
 barign &
 
+#set up the papparazi
+pprz &
+
 exec sh -c 'while :; do sleep 10; done'
