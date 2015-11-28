@@ -11,7 +11,6 @@ xsetroot -cursor_name left_ptr
 
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
-#Make this a calculation with root window size and border with some time
 barinfo | lemonbar -g $(echo $(wattr w $(lsw -r)) '-2*' "$BW" '-10' | bc)"x16+5+5" -B '#ffffff' -F '#000000' &
 feh --no-fehbg --image-bg black --bg-fill '/usr/share/wall/bomb.jpg'
 sxhkd -c /home/adrian/.sxhkdrc &
