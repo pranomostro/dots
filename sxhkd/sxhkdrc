@@ -30,3 +30,5 @@ mod4 + g
 	beau h $(pfw)
 mod4 + f
 	fullscreen $(pfw)
+mod4 + y
+	wmap -u $(pfw)
