@@ -2,34 +2,6 @@ shopt -s histappend
 
 PS1="» "
 
-alias ll='ls -ali --group-directories-first'
-alias l='ls --color=always'
-alias cl='ls -ali --color=always --group-directories-first'
-alias rr='rm -r'
-alias e='/usr/local/plan9/bin/ed'
-alias cs='clear'
-alias lc='wc -l'
-alias ee='chmod 0700 *'
-alias en='chmod 0600 *'
-alias fe='chmod 0711 *'
-alias md='mkdir'
-alias d='pwd'
-alias rd='rmdir'
-alias ed='ed -v -p=*'
-alias cd..='cd ..'
-alias tch='touch'
-alias python='python2.7'
-alias pacman='pacman --color auto'
-alias bullshit='bullshit /usr/local/share/bullshit'
-alias fortune='/usr/local/plan9/bin/fortune /usr/local/plan9/lib/fortunes'
-alias rm='r'
-
-#Just to troll a little bit
-alias emacs='ed -r -s'
-alias vim='info Ed'
-alias vi='man ed'
-alias nano='sam'
-
 LANG="de_DE.UTF-8"
 export LANG
 

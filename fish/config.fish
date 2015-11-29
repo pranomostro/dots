@@ -43,6 +43,10 @@ function l
 	command ls --color=never $argv
 end
 
+function ls
+	command ls --color=never $argv
+end
+
 function e
 	command ed $argv
 end
