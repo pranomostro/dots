@@ -6,20 +6,27 @@ if [ -f "$XRESOURCES" ]; then
 	xrdb "$XRESOURCES"
 fi
 
+#maybe try out backgrounds by xsetroot
+
 xsetroot -name geb
 xsetroot -cursor_name left_ptr
 
 xmodmap /home/adrian/.config/kb/neo.xmodmap
 
-barinfo | lemonbar -g $(echo $(wattr w $(lsw -r)) '-2*' "$BW" '-10' | bc)"x16+5+5" -B '#ffffff' -F '#000000' &
-feh --no-fehbg --image-bg black --bg-fill '/usr/share/wall/bomb.jpg'
+#dimensions for bar
+
+barsize=$(echo $(wattr w $(lsw -r)) '-2*' "$BW" '-10' | bc)"x16+5+5"
+
+#various startup programs, sorted after line length :I
+
+barinfo 2>/dev/null | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' &
+feh --no-fehbg --image-bg black --bg-fill '/usr/share/wall/bomb.png'
 sxhkd -c /home/adrian/.sxhkdrc &
-wew | yawee.sh &
+wew | yawee.sh &>/dev/null &
+pprz &
 
 #ignore all bars
 barign &
 
-#set up the papparazi
-pprz &
-
+#sleep till the end of time
 exec sh -c 'while :; do sleep 10; done'
