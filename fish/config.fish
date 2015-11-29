@@ -36,15 +36,11 @@ function cl
 end
 
 function ll
-	command ls -ali --color=always --group-directories-first $argv
+	command ls -ali --color=never --group-directories-first $argv
 end
 
 function l
 	command ls --color=never $argv
-end
-
-function ls
-	command ls -ali --color=never --group-directories-first $argv
 end
 
 function e
