@@ -1,22 +1,4 @@
-*.x
-*.a
-*.o
-*.toc
-*.aux
-*.log
-*.pdf
-*.gz
-*.html
-*.png
-*.jpg
-*.gif
-*.css
-*.js
-*.jpe
-*.htm
 
 .gitignore
-
-test/
 
 COPYING
