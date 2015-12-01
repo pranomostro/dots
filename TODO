@@ -1,3 +1,4 @@
 -install a serif typeface
 -add mouse handling (for resizing and moving windows)
 -when a window is created, move it to free space
+-add a proper README.
