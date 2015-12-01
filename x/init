@@ -28,5 +28,8 @@ pprz &
 #ignore all bars
 barign &
 
+#play the music
+play $(fds /mnt/mus | grep '\.flac$' | shuf | tail -8) &
+
 #sleep till the end of time
 exec sh -c 'while :; do sleep 10; done'
