@@ -1,10 +1,9 @@
+#links to the home directory
 link: create force!
     ~/.agignore: ag/ignore
     ~/.bashrc: bash/init
-    ~/.fishrc: fish/config.fish
     ~/.gitconfig: git/config
     ~/.profile: profile/profile
-    ~/.sxhkdrc: sxhkd/sxhkdrc
     ~/.msmtprc: msmtp/config
     ~/.toprc: top/init
     ~/.xinitrc: x/init
@@ -14,3 +13,11 @@ link: create force!
 link: create force!
     /home/adrian/proj/begun/dmc/config.def.h: comp/dmcconf.h
     /usr/src/st/config.def.h: comp/stconf.h
+
+#links to .config
+link: create force!
+    ~/.config/sxhkd/sxhkdrc: sxhkd/sxhkdrc
+    ~/.config/fish/config.fish: fish/config
+    ~/.config/fish/functions.fish: fish/functions
+    ~/.config/fish/fishd.elektronengehirn: fish/fishd
+    ~/.config/user-dirs.dirs: usedirs/dirs
