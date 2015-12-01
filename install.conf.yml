@@ -20,4 +20,4 @@ link: create force!
     ~/.config/fish/config.fish: fish/config
     ~/.config/fish/functions.fish: fish/functions
     ~/.config/fish/fishd.elektronengehirn: fish/fishd
-    ~/.config/user-dirs.dirs: usedirs/dirs
+    ~/.config/user-dirs.dirs: userdirs/dirs

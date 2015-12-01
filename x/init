@@ -11,7 +11,7 @@ fi
 xsetroot -name geb
 xsetroot -cursor_name left_ptr
 
-xmodmap /home/adrian/.config/kb/neo.xmodmap
+xmodmap /home/adrian/dots/kb/neo.xmodmap
 
 #dimensions for bar
 
@@ -21,8 +21,8 @@ barsize=$(echo $(wattr w $(lsw -r)) '-2*' "$BW" '-10' | bc)"x16+5+5"
 
 barinfo 2>/dev/null | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' &
 feh --no-fehbg --image-bg black --bg-fill '/usr/share/wall/bomb.png'
-sxhkd -c /home/adrian/.sxhkdrc &
 wew | yawee.sh &>/dev/null &
+sxhkd &
 pprz &
 
 #ignore all bars

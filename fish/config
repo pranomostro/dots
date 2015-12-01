@@ -15,7 +15,7 @@ set -x GPG_TTY (tty)
 
 #apply the functions to the current shell
 
-source /home/adrian/.config/fish/functions.fish
+source /home/adrian/dots/fish/functions
 
 #prompts
 
@@ -29,7 +29,7 @@ function fish_prompt
 	echo -n (pwd)
 
 	set_color normal
-	
+
 	echo -n ' » '
 end
 
