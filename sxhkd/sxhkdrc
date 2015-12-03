@@ -47,3 +47,9 @@ mod4 + f
 	fullscreen $(pfw)
 mod4 + y
 	mapw -u $(pfw)
+
+#play and stop some random music with this binding
+mod4 + P
+	play $(fds /mnt/mus | grep '\.flac$' | shuf | tail -1)
+mod4 + M
+	killall ogg123
