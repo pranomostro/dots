@@ -47,3 +47,9 @@ mod4 + f
 	fullscreen $(pfw)
 mod4 + y
 	mapw -u $(pfw)
+
+#sound effects-boom!
+mod4 + shift + e
+	chv -5
+mod4 + shift + c
+	chv +5
