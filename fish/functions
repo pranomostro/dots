@@ -58,10 +58,6 @@ function g
 	grep -E $argv
 end
 
-function rr
-	rm -r $argv
-end
-
 function cs
 	clear
 end
@@ -70,28 +66,12 @@ function lc
 	wc -l $argv
 end
 
-function ee
-	chmod 0700 * $argv
-end
-
-function en
-	chmod 0600 * $argv
-end
-
-function fe
-	chmod 0711 * $argv
-end
-
 function md
 	mkdir $argv
 end
 
 function d
 	pwd $argv
-end
-
-function rd
-	rmdir $argv
 end
 
 function cd..
@@ -108,6 +88,16 @@ end
 
 function rm
 	r $argv
+end
+
+function mcd
+	md $argv
+	cd $argv
+end
+
+function cls
+	cd $argv
+	ls
 end
 
 #rlwrap is great
