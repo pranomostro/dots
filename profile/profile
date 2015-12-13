@@ -1,6 +1,6 @@
 shopt -s histappend
 
-PS1="» "
+PS1=" » "
 
 LANG="de_DE.UTF-8"
 export LANG
