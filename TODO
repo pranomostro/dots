@@ -1,5 +1,4 @@
 -install a serif typeface
 -add mouse handling (for resizing and moving windows)
 -when a window is created, move it to free space
--make a bar showing unmapped main windows with names, and clicking will show them
 -configure top so that it looks good
