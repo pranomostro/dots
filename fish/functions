@@ -48,8 +48,14 @@ function man
 	command man $argv | less
 end
 
+#silence is golden
+
 function bc
 	command bc -q $argv
+end
+
+function gdb
+	command gdb -q $argv
 end
 
 #definition of new commands or just abbreviations
