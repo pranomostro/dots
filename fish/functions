@@ -116,8 +116,8 @@ function ed
 	rlwrap -s 1000000 ed $argv
 end
 
-function tl
-	rlwrap -s 1000000 tl $argv
+function lisp
+	rlwrap -s 1000000 -S '() ' lisp $argv
 end
 
 function pn
