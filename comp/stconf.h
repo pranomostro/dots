@@ -26,8 +26,8 @@ static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static char vtiden[] = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 1;
-static float chscale = 1;
+static float cwscale = 1.0;
+static float chscale = 1.0;
 
 /*
  * word delimiter string
@@ -97,7 +97,7 @@ static const char *colorname[] = {
 	"#3f3f3f",
 	"#11af88",
 	"#ffb405",
-	"#bfbfbf"
+	"#bfbfbf",
 };
 
 /*
@@ -108,6 +108,7 @@ static const char *colorname[] = {
 static unsigned int defaultfg = 0;
 static unsigned int defaultbg = 15;
 static unsigned int defaultcs = 258;
+static unsigned int defaultrcs=259;
 
 /*
  * Default shape of cursor
@@ -117,7 +118,6 @@ static unsigned int defaultcs = 258;
  */
 
 static unsigned int cursorshape = 2;
-
 
 /*
  * Default colour and shape of the mouse cursor
@@ -131,12 +131,14 @@ static unsigned int mousebg = 0;
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
+
 static unsigned int defaultitalic = 11;
 static unsigned int defaultunderline = 7;
 
 /* Internal mouse shortcuts. */
 /* Beware that overloading Button1 will disable the selection. */
-static Mousekey mshortcuts[] = {
+
+static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
 	{ Button4,              XK_ANY_MOD,     "\031" },
 	{ Button5,              XK_ANY_MOD,     "\005" },

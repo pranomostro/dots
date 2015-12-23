@@ -112,6 +112,34 @@ end
 
 #rlwrap is great
 
+#for the zoo
+
+function boa
+	rlwrap -s 1000000 -S '~~> ' boa
+end
+
+function levy
+	rlwrap -s 1000000 -S '+ ' levy
+end
+
+function prolog
+	rlwrap -s 1000000 -S ':- ' prolog
+end
+
+function poly
+	rlwrap -s 1000000 -S '[ ' poly
+end
+
+function sub
+	rlwrap -s 1000000 -S '_ ' sub
+end
+
+#other repls
+
+function k
+	rlwrap -s 1000000 -S 'k ' k
+end
+
 function rc
 	rlwrap -s 1000000 rc $argv
 end
