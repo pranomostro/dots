@@ -115,23 +115,23 @@ end
 #for the zoo
 
 function boa
-	rlwrap -s 1000000 -S '~~> ' boa
+	rlwrap -s 1000000 boa
 end
 
 function levy
-	rlwrap -s 1000000 -S '+ ' levy
+	rlwrap -s 1000000 levy
 end
 
 function prolog
-	rlwrap -s 1000000 -S ':- ' prolog
+	rlwrap -s 1000000 prolog
 end
 
 function poly
-	rlwrap -s 1000000 -S '[ ' poly
+	rlwrap -s 1000000 poly
 end
 
 function sub
-	rlwrap -s 1000000 -S '_ ' sub
+	rlwrap -s 1000000 sub
 end
 
 #other repls
