@@ -5,7 +5,7 @@ umask 066
 set -x -g LANG de_DE.UTF-8
 set -x -g PATH_SEPARATOR :
 
-set -x -g PATH /usr/bin /usr/local/bin /home/adrian/bin /usr/local/bin /usr/local/plan9/bin
+set -x -g PATH /usr/bin /usr/local/bin /home/adrian/bin /usr/local/bin /usr/local/plan9/bin /usr/src/lang/perl6/bin
 set -x -g PLAN9 /usr/local/plan9
 
 set -x -g BUG_PROJECT /home/adrian/proj/begun/potion/.bugdb

@@ -152,6 +152,10 @@ function lisp
 	rlwrap -s 1000000 -S '() ' lisp $argv
 end
 
+function perl6
+	rlwrap -s 1000000 -S ':→ ' perl6 $argv
+end
+
 function pn
 	rlwrap -s 1000000 (which potion) $argv
 end
