@@ -20,8 +20,8 @@ barsize=$(echo $(wattr w $(lsw -r)) '-2*2-10' | bc)"x16+5+5"
 #various startup programs, sorted after line length :I
 
 barinfo 2>/dev/null | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' &
-feh --no-fehbg --image-bg white --bg-max '/usr/share/wall/aleph.jpg'
-wew | yawee.sh &>/dev/null &
+bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'
+wew | yawee &>/dev/null &
 sxhkd &
 pprz &
 
