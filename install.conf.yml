@@ -9,9 +9,11 @@ link: create force!
     ~/.xinitrc: x/init
     ~/.gnupg/gpg-agent.conf: gpg/agentconf
     ~/.gnupg/gpg.conf: gpg/conf
+    ~/.vis: vis
 
 link: create force!
     /home/adrian/proj/begun/dmc/config.def.h: comp/dmcconf.h
+    /usr/src/vis/config.def.h: comp/visconf.h
     /usr/src/st/config.def.h: comp/stconf.h
 
 #links to .config
