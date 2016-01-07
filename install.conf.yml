@@ -9,12 +9,16 @@ link: create force!
     ~/.xinitrc: x/init
     ~/.gnupg/gpg-agent.conf: gpg/agentconf
     ~/.gnupg/gpg.conf: gpg/conf
-    ~/.vis: vis
 
+#compilation configuration
 link: create force!
     /home/adrian/proj/begun/dmc/config.def.h: comp/dmcconf.h
     /usr/src/vis/config.def.h: comp/visconf.h
     /usr/src/st/config.def.h: comp/stconf.h
+
+#for vis
+link: create force!
+    /usr/local/share/vis/visrc.lua: vis/init
 
 #links to .config
 link: create force!
