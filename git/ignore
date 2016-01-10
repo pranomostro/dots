@@ -1,4 +1,5 @@
-
+#ignore yourself
 .gitignore
 
+#licenses are not interesting
 COPYING
