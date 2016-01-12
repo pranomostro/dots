@@ -1,19 +1,18 @@
 shopt -s histappend
 
-PS1=" » "
+PS1=' » '
 
-LANG="de_DE.UTF-8"
+LANG='de_DE.UTF-8'
 export LANG
 
-export HISTSIZE=""
-export HISTFILESIZE=""
+export HISTSIZE=''
+export HISTFILESIZE=''
 
 export PATH_SEPARATOR=:
 
-PATH=$PATH:"/home/adrian/bin/"
+export PLAN9='/usr/local/plan9'
 
-export PLAN9=/usr/local/plan9
-export PATH=$PATH:$PLAN9/bin
+export PATH='/bin:/usr/bin:/usr/local/bin:/home/adrian/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 
 #variables for wmutils
 export ACTIVE=0xffb405
