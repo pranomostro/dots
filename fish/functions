@@ -51,7 +51,7 @@ end
 #silence is golden
 
 function bc
-	command bc -q $argv
+	command bc -ql $argv
 end
 
 function gdb
@@ -133,6 +133,11 @@ end
 
 function pn
 	rlwrap -s 1000000 (which potion) $argv
+end
+
+function perl6
+	set -x PATH $PATH '/usr/src/lang/perl6/rakudobrew/bin'
+	rlwrap -s 1000000 perl6 $argv
 end
 
 #Just to troll a little bit
