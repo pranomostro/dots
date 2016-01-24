@@ -127,7 +127,7 @@ function ed
 end
 
 function lisp
-	rlwrap -s 1000000 -S '() ' lisp $argv
+	rlwrap -s 1000000 lisp $argv
 end
 
 
