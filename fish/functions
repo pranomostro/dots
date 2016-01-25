@@ -29,11 +29,11 @@ function ll
 end
 
 function l
-	command ls --color=never $argv
+	command ls $argv
 end
 
 function ls
-	command ls --color=never $argv
+	command ls $argv
 end
 
 function e
