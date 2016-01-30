@@ -1,10 +1,6 @@
 #function definition for the fish shell
 
-#fortune and fortune-likes, entertaining!
-
-function fortune
-	command fortune /usr/local/plan9/lib/fortunes
-end
+#fortune-likes, entertaining!
 
 function troll
 	command fortune /usr/local/share/troll
@@ -56,10 +52,6 @@ end
 
 function gdb
 	command gdb -ex 'set confirm off' -q $argv
-end
-
-function swipl
-	command swipl -q $argv
 end
 
 #definition of new commands or just abbreviations
@@ -130,14 +122,8 @@ function lisp
 	rlwrap -s 1000000 lisp $argv
 end
 
-
 function pn
 	rlwrap -s 1000000 (which potion) $argv
-end
-
-function perl6
-	set -x PATH $PATH '/usr/src/lang/perl6/rakudobrew/bin'
-	rlwrap -s 1000000 perl6 $argv
 end
 
 #Just to troll a little bit
@@ -157,4 +143,3 @@ end
 function nano
 	sam $argv
 end
-
