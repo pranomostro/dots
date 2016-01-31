@@ -54,6 +54,10 @@ function gdb
 	command gdb -ex 'set confirm off' -q $argv
 end
 
+function curl
+	command curl -s $argv
+end
+
 #definition of new commands or just abbreviations
 
 function g
