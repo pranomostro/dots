@@ -22,3 +22,4 @@ link: create force!
     ~/.config/fish/functions.fish: fish/functions
     ~/.config/fish/fishd.elektronengehirn: fish/fishd
     ~/.config/user-dirs.dirs: userdirs/dirs
+    ~/.config/git/ignore: git/ignore
