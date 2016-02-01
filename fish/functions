@@ -130,6 +130,14 @@ function pn
 	rlwrap -s 1000000 (which potion) $argv
 end
 
+function mlite
+	rlwrap -s 1000000 mlite $argv
+end
+
+function kg
+	rlwrap -s 1000000 kg $argv
+end
+
 #Just to troll a little bit
 
 function emacs
