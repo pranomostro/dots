@@ -6,7 +6,6 @@ These are my dotfiles, managed via [dottle](https://www.github.com/ludat/dottle)
 Installation
 ------------
 
-Copy this into ~/dots, then run dottle install.
 Copy this into ~/dots, then run
 
 	dottle install

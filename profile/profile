@@ -5,8 +5,7 @@ PS1=' » '
 LANG='de_DE.UTF-8'
 export LANG
 
-export HISTSIZE=''
-export HISTFILESIZE=''
+export HISTSIZE='65536'
 
 export PATH_SEPARATOR=:
 

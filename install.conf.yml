@@ -5,6 +5,7 @@ link: create force!
     ~/.gitconfig: git/config
     ~/.profile: profile/profile
     ~/.msmtprc: msmtp/config
+    ~/.mirarc: mira/init
     ~/.toprc: top/init
     ~/.xinitrc: x/init
     ~/.gnupg/gpg-agent.conf: gpg/agentconf
