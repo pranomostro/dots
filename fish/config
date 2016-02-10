@@ -9,8 +9,10 @@ set -x -g EDITOR e
 set -x -g VISUAL sam
 set -x GPG_TTY (tty)
 
-#apply the functions to the current shell
+#apply z
+source /usr/local/bin/z
 
+#apply the functions to the current shell
 source /home/adrian/dots/fish/functions
 
 #prompts
