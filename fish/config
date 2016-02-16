@@ -4,10 +4,10 @@ umask 066
 
 set -x -g LANG de_DE.UTF-8
 
-set -x -g BUG_PROJECT /home/adrian/proj/begun/spot/core/bugdb
 set -x -g EDITOR e
 set -x -g VISUAL sam
 set -x GPG_TTY (tty)
+set -x KLONGPATH /usr/local/src/lang/klong/lib
 
 #apply z
 source /usr/local/bin/z

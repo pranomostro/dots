@@ -1,4 +1,5 @@
 pinentry-program /usr/bin/pinentry-curses
+no-grab
 ###+++--- GPGConf ---+++###
 default-cache-ttl 600
 max-cache-ttl 0
