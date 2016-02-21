@@ -12,10 +12,6 @@ end
 
 #having default options to commands which are always useful.
 
-function weather
-	ansiweather -a false -l pasing $argv
-end
-
 function pacman
 	command pacman --color always $argv
 end
