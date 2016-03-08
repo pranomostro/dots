@@ -12,8 +12,8 @@ mod4 + {n, r, t, d}
 	wmv {-$GAP 0,0 +$GAP, 0 -$GAP, +$GAP 0} $(pfw)
 mod4 + shift + {n, r, t, d}
 	wrs {-$GAP 0, 0 +$GAP, 0 -$GAP, +$GAP 0} $(pfw)
-mod4 + {u, i, a, e}
-	closest {west, north, south, east}
+mod4 + {a, e}
+	closest {left, right}
 mod4 + {o, s}
 	wsch {1.05, 0.95} $(pfw)
 mod4 + {c, h, p, b}
@@ -49,7 +49,7 @@ mod4 + y
 	mapw -u $(pfw)
 
 #sound effects-boom!
-mod4 + shift + e
+mod4 + E
 	chv -5
-mod4 + shift + c
+mod4 + C
 	chv +5

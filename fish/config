@@ -2,8 +2,6 @@ if status --is-interactive
 
 umask 066
 
-set -x -g LANG de_DE.UTF-8
-
 set -x -g EDITOR e
 set -x -g VISUAL sam
 set -x GPG_TTY (tty)
