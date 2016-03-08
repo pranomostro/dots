@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Liberation Mono:pixelsize=10:antialias=false:autohint=false";
+static char font[] = "envypn:pixelsize=10:antialias=false:autohint=false";
 static int borderpx = 1;
 #define histsize 4096
 
@@ -25,8 +25,8 @@ static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static char vtiden[] = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
-static float cwscale = 1.0;
-static float chscale = 1.0;
+static float cwscale = 1.15;
+static float chscale = 1.1;
 
 /*
  * word delimiter string
@@ -420,3 +420,11 @@ static uint selmasks[] = {
 	[SEL_RECTANGULAR] = Mod1Mask,
 };
 
+/*
+ * Printable characters in ASCII, used to estimate the advance width
+ * of single wide characters.
+ */
+static char ascii_printable[] =
+	" !\"#$%&'()*+,-./0123456789:;<=>?"
+	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
+	"`abcdefghijklmnopqrstuvwxyz{|}~";
