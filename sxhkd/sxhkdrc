@@ -1,6 +1,6 @@
 #very minimal configuration file for sxhkd
 mod4 + Return
-	st -g "80x22+$GAP+$GAP"
+	st -g "64x16+$GAP+$GAP"
 mod4 + space
 	dmenu_run -l 10 -nf black -nb white -sb '#ffb405' -fn 'envypn:pixelsize=13:antialias=false:autohint=false'
 mod4 + q
