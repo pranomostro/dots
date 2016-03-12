@@ -1,14 +1,15 @@
 Dotfiles
 ========
 
-These are my dotfiles, managed via [dottle](https://www.github.com/ludat/dottle).
+These are my dotfiles, managed with an ugly makefile (if you know how to assign
+a default rule to all operations, tell me, please).
 
 Installation
 ------------
 
 Copy this into ~/dots, then run
 
-	dottle install
+	make
 
 This should install the dotfiles in the right place.
 
@@ -20,7 +21,7 @@ software. It can't be said enough.
 Special thanks to the guys from suckless.org and to z3bra,
 dcat and several others for developing wmutils.
 Many thanks also to lemonboy for his bar, the GNU guys,
-because I still use their coreutils (they still suck :P).
+because I can use their coreutils (they still suck :P).
 Thanks to that guy who wrote sxhkd inventing such an
 inmmemorable name.
 
