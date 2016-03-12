@@ -2,7 +2,7 @@
 HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.profile /home/adrian/.msmtprc /home/adrian/.mirarc /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
 
 #links to header files for configuration
-HEADERS=/home/adrian/proj/begun/dmc/config.def.h /usr/local/src/st/config.def.h
+HEADERS=/home/adrian/proj/begun/dmc/config.def.h /usr/local/src/st/config.def.h /usr/local/src/vis/config.def.h
 
 #links to .config
 TOCONF=/home/adrian/.config/sxhkd/sxhkdrc /home/adrian/.config/fish/config.fish /home/adrian/.config/fish/functions.fish /home/adrian/.config/fish/fishd.elektronengehirn /home/adrian/.config/user-dirs.dirs /home/adrian/.config/git/ignore
