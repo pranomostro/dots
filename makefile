@@ -38,6 +38,8 @@ clean:
 	ln -s $< $@
 /usr/local/src/st/config.def.h: $(DOTS)/comp/stconf.h
 	ln -s $< $@
+/usr/local/src/vis/config.def.h: $(DOTS)/comp/visconf.h
+	ln -s $< $@
 /home/adrian/.config/sxhkd/sxhkdrc: $(DOTS)/sxhkd/sxhkdrc
 	ln -s $< $@
 /home/adrian/.config/fish/config.fish: $(DOTS)/fish/config
