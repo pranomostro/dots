@@ -5,6 +5,8 @@
 	editor = rlwrap -s 1000000 ed
 
 [alias]
+	push="push --follow-tags"
+
 	ds="diff --staged"
 	dds="diff --staged --stat"
 
