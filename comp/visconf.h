@@ -309,7 +309,7 @@ static const KeyBinding bindings_insert[] = {
 	{ "<C-x><C-e>",         ACTION(WINDOW_SLIDE_UP)                     },
 	{ "<C-x><C-y>",         ACTION(WINDOW_SLIDE_DOWN)                   },
 	{ "<Tab>",              ACTION(INSERT_TAB)                          },
-	{ "<S-Tab>",            ACTION(CURSORS_ALIGN_INDENT)                },
+	{ "<S-Tab>",            ACTION(CURSORS_ALIGN_INDENT_RIGHT)          },
 	{ "<C-r>",              ACTION(INSERT_REGISTER)                     },
 	{ 0 /* empty last element, array terminator */                      },
 };
