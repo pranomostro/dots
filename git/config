@@ -1,8 +1,9 @@
 [user]
-	email = a.regenfuss@gmx.de
-	name = scharlatan
+	email=a.regenfuss@gmx.de
+	name=scharlatan
 [core]
-	editor = rlwrap -s 1000000 ed
+	editor=rlwrap -s 1000000 ed
+	symlinks=false
 
 [alias]
 	pf="push --follow-tags"
@@ -34,4 +35,4 @@
 
 	praise="blame"
 [push]
-	default = matching
+	default=matching
