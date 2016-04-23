@@ -122,8 +122,8 @@ function ed
 	rlwrap -s 1000000 ed $argv
 end
 
-function lisp
-	rlwrap -s 1000000 lisp $argv
+function scheme
+	rlwrap -s 1000000 scheme $argv
 end
 
 function pn
