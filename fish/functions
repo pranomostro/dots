@@ -122,8 +122,8 @@ function ed
 	rlwrap -s 1000000 ed $argv
 end
 
-function scheme
-	rlwrap -s 1000000 scheme $argv
+function scm
+	rlwrap -S '() ' -s 1000000 scm $argv
 end
 
 function pn
