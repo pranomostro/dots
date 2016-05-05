@@ -16,7 +16,7 @@ xset fp rehash
 xsetroot -name geb
 xsetroot -cursor_name left_ptr
 
-xmodmap /home/adrian/dots/kb/neo.xmodmap
+xmodmap /home/adrian/proj/extra/dots/kb/neo.xmodmap
 
 #dimensions for bar
 
