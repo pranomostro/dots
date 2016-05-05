@@ -7,7 +7,7 @@ HEADERS=/usr/local/src/st/config.def.h
 #links to .config
 TOCONF=/home/adrian/.config/sxhkd/sxhkdrc /home/adrian/.config/fish/config.fish /home/adrian/.config/fish/functions.fish /home/adrian/.config/fish/fishd.elektronengehirn /home/adrian/.config/user-dirs.dirs /home/adrian/.config/git/ignore
 
-DOTS = $(shell pwd)
+DOTS = /home/adrian/proj/extra/dots
 
 all: $(HOME) $(HEADERS) $(TOCONF)
 

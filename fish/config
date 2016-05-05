@@ -11,7 +11,7 @@ set -x KLONGPATH /usr/local/src/lang/klong/lib
 source /usr/local/bin/z
 
 #apply the functions to the current shell
-source /home/adrian/dots/fish/functions
+source /home/adrian/.config/fish/functions.fish
 
 #prompts
 
