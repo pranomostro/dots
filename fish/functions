@@ -126,12 +126,8 @@ function scm
 	rlwrap -S '() ' -s 1000000 scm $argv
 end
 
-function pn
-	rlwrap -s 1000000 (which potion) $argv
-end
-
-function mlite
-	rlwrap -s 1000000 mlite $argv
+function lua
+	rlwrap -s 1000000 lua $argv
 end
 
 function kg
