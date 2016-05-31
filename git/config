@@ -20,7 +20,7 @@
 	co="checkout"
 	cm="checkout master"
 
-	tl="tag -l -n4"
+	tl="tag -l -n16"
 	ta="tag -a"
 
 	lm="log --pretty=oneline"
