@@ -1,5 +1,5 @@
 #links to the home directory
-HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.profile /home/adrian/.msmtprc /home/adrian/.mirarc /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
+HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.fetchmailrc /home/adrian/.gitconfig /home/adrian/.profile /home/adrian/.msmtprc /home/adrian/.mirarc /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
 
 #links to header files for configuration
 HEADERS=/usr/local/src/st/config.def.h
@@ -17,6 +17,8 @@ clean:
 /home/adrian/.agignore: $(DOTS)/ag/ignore
 	ln $< $@
 /home/adrian/.bashrc: $(DOTS)/bash/init
+	ln $< $@
+/home/adrian/.fetchmailrc: $(DOTS)/fetchmail/config
 	ln $< $@
 /home/adrian/.gitconfig: $(DOTS)/git/config
 	ln $< $@
