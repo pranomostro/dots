@@ -18,4 +18,6 @@ export INACTIVE=0x6b0bbf
 export BW=8
 export GAP=32
 
+fetchmail
+
 startx
