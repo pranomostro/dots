@@ -4,7 +4,6 @@ umask 066
 
 set -x -g EDITOR e
 set -x -g VISUAL sam
-set -x GPG_TTY (tty)
 set -x KLONGPATH /usr/local/src/lang/klong/lib
 
 #apply z

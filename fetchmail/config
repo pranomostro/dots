@@ -1,6 +1,0 @@
-defaults proto imap4 uidl
-	keep
-	mda "/usr/bin/procmail"
-
-poll mail.gmail.com
-	user pranomostro is nobody here
