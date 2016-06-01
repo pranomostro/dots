@@ -10,4 +10,4 @@ LOGFILE=/tmp/procmail.log
 :0
 
 * .*
-in/
+pranomostro/
