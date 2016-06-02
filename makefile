@@ -1,5 +1,5 @@
 #links to the home directory
-HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.procmailrc /home/adrian/.gitconfig /home/adrian/.profile /home/adrian/.mailrc /home/adrian/.msmtprc /home/adrian/.mirarc /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
+HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.mailrc /home/adrian/.mirarc /home/adrian/.msmtprc /home/adrian/.offlineimaprc /home/adrian/.procmailrc /home/adrian/.profile /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
 
 #links to header files for configuration
 HEADERS=/usr/local/src/st/config.def.h
@@ -29,6 +29,8 @@ clean:
 /home/adrian/.msmtprc: $(DOTS)/msmtp/config
 	ln $< $@
 /home/adrian/.mirarc: $(DOTS)/mira/init
+	ln $< $@
+/home/adrian/.offlineimaprc: $(DOTS)/offlineimap/config
 	ln $< $@
 /home/adrian/.toprc: $(DOTS)/top/init
 	ln $< $@

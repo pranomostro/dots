@@ -1,0 +1,19 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = pranomestro
+
+[Account pranomestro]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = /usr/local/mail/pranomostro
+
+[Repository Remote]
+type = Gmail
+remoteuser = pranomestro@gmail.com
+realdelete = no
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
