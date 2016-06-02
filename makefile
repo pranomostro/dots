@@ -1,5 +1,5 @@
 #links to the home directory
-HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.mailrc /home/adrian/.mirarc /home/adrian/.msmtprc /home/adrian/.offlineimaprc /home/adrian/.procmailrc /home/adrian/.profile /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
+HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.mailrc /home/adrian/.mirarc /home/adrian/.msmtprc /home/adrian/.notmuch-config /home/adrian/.offlineimaprc /home/adrian/.profile /home/adrian/.toprc /home/adrian/.xinitrc /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf
 
 #links to header files for configuration
 HEADERS=/usr/local/src/st/config.def.h
@@ -18,8 +18,6 @@ clean:
 	ln $< $@
 /home/adrian/.bashrc: $(DOTS)/bash/init
 	ln $< $@
-/home/adrian/.procmailrc: $(DOTS)/procmail/config
-	ln $< $@
 /home/adrian/.gitconfig: $(DOTS)/git/config
 	ln $< $@
 /home/adrian/.profile: $(DOTS)/profile/profile
@@ -29,6 +27,8 @@ clean:
 /home/adrian/.msmtprc: $(DOTS)/msmtp/config
 	ln $< $@
 /home/adrian/.mirarc: $(DOTS)/mira/init
+	ln $< $@
+/home/adrian/.notmuch-config: $(DOTS)/notmuch/config
 	ln $< $@
 /home/adrian/.offlineimaprc: $(DOTS)/offlineimap/config
 	ln $< $@
