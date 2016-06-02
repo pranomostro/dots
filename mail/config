@@ -24,4 +24,4 @@ set sendcharsets=utf-8
 ignore received in-reply-to message-id references
 ignore mime-version content-transfer-encoding
 
-folder /usr/local/mail/pranomostro
+folder /usr/local/mail/pranomostro/INBOX/
