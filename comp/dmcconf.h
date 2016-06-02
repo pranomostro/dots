@@ -1,5 +1,5 @@
 #define VERSION "0.1"
-#define DMCDIR ".dmc"
+#define DMCDIR "/usr/local/mail/"
 #define DIRPERM 0750
 #define EDITOR "ed"
 #define MAXACC 16 /* maximum number of accounts */
