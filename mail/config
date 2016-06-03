@@ -22,6 +22,7 @@ set sendcharsets=utf-8
 
 #fucking shit
 set emptystart
+set sendmail="/usr/bin/msmtp"
 
 # Hide some header fields which are uninteresting for most human readers.
 ignore received in-reply-to message-id references
