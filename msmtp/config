@@ -1,7 +1,7 @@
 #global settings
 defaults
 tls on
-tls_certcheck off
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
 #gmail account
 account gmail
