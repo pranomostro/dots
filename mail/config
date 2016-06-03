@@ -20,8 +20,9 @@ set quote
 # representable in it, otherwise in UTF-8.
 set sendcharsets=utf-8
 
+#fucking shit
+set emptystart
+
 # Hide some header fields which are uninteresting for most human readers.
 ignore received in-reply-to message-id references
 ignore mime-version content-transfer-encoding
-
-folder /usr/local/mail/pranomostro/INBOX/
