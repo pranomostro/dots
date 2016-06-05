@@ -27,6 +27,8 @@
 	ls="log --pretty=oneline --stat"
 	la="log --pretty=oneline --stat --graph --abbrev-commit"
 	lf="log --pretty=oneline --graph --abbrev-commit"
+	graph="log --graph --oneline --all --decorate --topo-order"
+	lg="log --pretty=format:\"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%an]\" --decorate --date=relative --abbrev-commit --abbrev=10 --graph"
 
 	st="status"
 
@@ -34,5 +36,6 @@
 	com="commit"
 
 	praise="blame"
+
 [push]
 	default=matching
