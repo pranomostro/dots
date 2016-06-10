@@ -39,3 +39,9 @@
 
 [push]
 	default=matching
+
+[sendemail]
+	smtpEncryption=tls
+	smtpServer=smtp.gmail.com
+	smtpUser=pranomestro@gmail.com
+	smtpServerPort=587
