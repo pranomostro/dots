@@ -1,8 +1,8 @@
 #links to the home directory
-HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf /home/adrian/.mailrc /home/adrian/.mirarc /home/adrian/.msmtprc /home/adrian/.offlineimaprc /home/adrian/.profile /home/adrian/.toprc /home/adrian/.xinitrc
+HOME=/home/adrian/.agignore /home/adrian/.bashrc /home/adrian/.gitconfig /home/adrian/.gnupg/gpg-agent.conf /home/adrian/.gnupg/gpg.conf /home/adrian/.mailrc /home/adrian/.msmtprc /home/adrian/.offlineimaprc /home/adrian/.profile /home/adrian/.toprc /home/adrian/.xinitrc
 
 #links to header files for configuration
-HEADERS=/usr/local/src/st/config.def.h
+HEADERS=/usr/local/src/st/config.def.h /usr/local/src/surf/config.def.h
 
 #links to .config
 TOCONF=/home/adrian/.config/fish/config.fish /home/adrian/.config/fish/fishd.elektronengehirn /home/adrian/.config/fish/functions.fish /home/adrian/.config/git/ignore /home/adrian/.config/sxhkd/sxhkdrc /home/adrian/.config/user-dirs.dirs
@@ -24,8 +24,6 @@ clean:
 	ln $< $@
 /home/adrian/.msmtprc: $(DOTS)/msmtp/config
 	ln $< $@
-/home/adrian/.mirarc: $(DOTS)/mira/init
-	ln $< $@
 /home/adrian/.offlineimaprc: $(DOTS)/offlineimap/config
 	ln $< $@
 /home/adrian/.profile: $(DOTS)/profile/profile
@@ -39,6 +37,8 @@ clean:
 /home/adrian/.gnupg/gpg.conf: $(DOTS)/gpg/conf
 	ln $< $@
 /usr/local/src/st/config.def.h: $(DOTS)/comp/stconf.h
+	ln $< $@
+/usr/local/src/surf/config.def.h: $(DOTS)/comp/surfconf.h
 	ln $< $@
 /home/adrian/.config/sxhkd/sxhkdrc: $(DOTS)/sxhkd/sxhkdrc
 	ln $< $@

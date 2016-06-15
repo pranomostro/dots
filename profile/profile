@@ -25,6 +25,6 @@ export GAP='30'
 export EDITOR='sam'
 export VISUAL='sam'
 export BACKGROUND='#fafeee'
-export FONT='envypn:pixelsize=16:antialias=false:autohint=false'
+export FONT='envypn:pixelsize=12:antialias=false:autohint=false'
 
 startx
