@@ -3,21 +3,28 @@ shopt -s histappend
 PS1=' » '
 
 export LC_ALL='de_DE.UTF-8'
-
 export HISTSIZE='65536'
+export KLONGPATH='/usr/local/src/lang/klong/lib'
 
-export PATH_SEPARATOR=:
-
-export PLAN9='/usr/local/plan9'
-
+#email stuff
 export MAIL='/usr/local/mail/pranomostro/INBOX'
+export INDEX='/usr/local/mail/pranomostro'
 
+#everything remotely path related
+export PLAN9='/usr/local/plan9'
+export PATH_SEPARATOR=':'
 export PATH='/bin:/usr/bin:/usr/local/bin:/home/adrian/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 
 #variables for wmutils
-export ACTIVE=0xffb405
-export INACTIVE=0x6b0bbf
-export BW=8
-export GAP=32
+export ACTIVE='0xffb405'
+export INACTIVE='0x6b0bbf'
+export BW='6'
+export GAP='30'
+
+#for sam
+export EDITOR='sam'
+export VISUAL='sam'
+export BACKGROUND='#fafeee'
+export FONT='envypn:pixelsize=16:antialias=false:autohint=false'
 
 startx

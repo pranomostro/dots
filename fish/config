@@ -2,11 +2,6 @@ if status --is-interactive
 
 umask 066
 
-set -x -g EDITOR sam
-set -x -g VISUAL sam
-set -x KLONGPATH /usr/local/src/lang/klong/lib
-set -x INDEX /usr/local/mail/pranomostro
-
 #apply z
 source /usr/local/bin/z
 
