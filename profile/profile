@@ -24,7 +24,7 @@ export GAP='30'
 #for sam
 export EDITOR='sam'
 export VISUAL='sam'
-export BACKGROUND='#fafeee'
+export FOREGROUND='#222222'
 export FONT='envypn:pixelsize=12:antialias=false:autohint=false'
 
 startx
