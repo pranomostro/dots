@@ -39,7 +39,7 @@ static Bool allowgeolocation      = TRUE;
 	.v = (char *[]){ "/bin/sh", "-c", \
 	     "prop=\"`xprop -id $2 $0 " \
 	     "| sed \"s/^$0(STRING) = \\(\\\\\"\\?\\)\\(.*\\)\\1$/\\2/\" " \
-	     "| xargs -0 printf %b | dmenu`\" &&" \
+	     "| xargs -0 printf %b | dmenu -l 10 -nf black -nb white -sb '#ffb405' -fn 'envypn-15:pixelsize=15:antialias=false:autohint=false'`\" &&" \
 	     "xprop -id $2 -f $1 8s -set $1 \"$prop\"", \
 	     p, q, winid, NULL \
 	} \
