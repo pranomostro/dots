@@ -47,3 +47,5 @@ clean:
 	ln $< $@
 /usr/local/src/surf/config.def.h: $(DOTDIR)/comp/surfconf.h
 	ln $< $@
+
+.PHONY: all clean
