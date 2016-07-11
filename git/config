@@ -33,7 +33,7 @@
 	st="status"
 
 	ca="commit --amend"
-	com="commit -sa"
+	com="commit -Sa"
 
 	praise="blame"
 
