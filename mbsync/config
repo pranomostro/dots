@@ -1,0 +1,20 @@
+IMAPAccount gmail
+Host imap.gmail.com
+User pranomestro
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/etc/pass/gmail.gpg"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPSTore gmail-remote
+Account gmail
+
+MaildirStore gmail-local
+Path /usr/local/mail/pranomostro/
+Inbox /usr/local/mail/pranomostro/in
+
+Channel gmail
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns *
+Create Both
+SyncState *
