@@ -10,7 +10,7 @@ Account gmail
 
 MaildirStore gmail-local
 Path /usr/local/mail/pranomostro/
-Inbox /usr/local/mail/pranomostro/in
+Inbox /usr/local/mail/pranomostro/INBOX
 
 Channel gmail
 Master :gmail-remote:
