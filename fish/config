@@ -18,7 +18,7 @@ function fish_prompt
 	z --add (pwd)
 	set_color 444444
 
-	echo -n (pwd | sed 's/'(echo $HOME | sed 's/\//\\\\\//g')'/~/')
+	echo -n (pwd | sed 's/^'(echo $HOME | sed 's/\//\\\\\//g')'/~/')
 
 	set_color normal
 
