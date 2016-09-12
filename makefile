@@ -1,7 +1,7 @@
 #actual config files everything depends on
 DOTS=ag/ignore bash/init comp/stconf.h comp/surfconf.h fish/config fish/fishd fish/functions git/config gpg/agentconf gpg/conf kb/neo.xmodmap mail/config mbsync/config msmtp/config profile/profile sxhkd/sxhkdrc userdirs/dirs x/init comp/stconf.h comp/surfconf.h
 
-INSTALLED=$(HOME)/.agignore $(HOME)/.bashrc $(HOME)/.config/fish/config.fish $(HOME)/.config/fish/fishd.elektronengehirn $(HOME)/.config/fish/functions.fish $(HOME)/.gitconfig $(HOME)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg.conf $(HOME)/.mailrc $(HOME)/.mbsyncrc $(HOME)/.msmtprc $(HOME)/.profile $(HOME)/.config/sxhkd/sxhkdrc /usr/local/src/st/config.def.h /usr/local/src/surf/config.def.h
+INSTALLED=$(HOME)/.agignore $(HOME)/.bashrc $(HOME)/.config/fish/config.fish $(HOME)/.config/fish/fishd.elektronengehirn $(HOME)/.config/fish/functions.fish $(HOME)/.gitconfig $(HOME)/.gnupg/gpg-agent.conf $(HOME)/.gnupg/gpg.conf $(HOME)/.mailrc $(HOME)/.mbsyncrc $(HOME)/.msmtprc $(HOME)/.profile $(HOME)/.config/sxhkd/sxhkdrc /usr/local/src/st/config.def.h /usr/local/src/surf/config.def.h /usr/local/src/slock/config.def.h
 
 DOTDIR = $(shell pwd)
 HOME = $(shell echo $$HOME)
@@ -47,6 +47,8 @@ $(HOME)/.xinitrc: $(DOTDIR)/x/init
 /usr/local/src/st/config.def.h: $(DOTDIR)/comp/stconf.h
 	ln $< $@
 /usr/local/src/surf/config.def.h: $(DOTDIR)/comp/surfconf.h
+	ln $< $@
+/usr/local/src/slock/config.def.h: $(DOTDIR)/comp/slockconf.h
 	ln $< $@
 
 .PHONY: all clean
