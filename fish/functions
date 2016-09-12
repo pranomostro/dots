@@ -41,7 +41,7 @@ function nl
 end
 
 function man
-	command man $argv | less
+	command man $argv | col -b | less
 end
 
 #silence is golden

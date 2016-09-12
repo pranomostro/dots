@@ -7,6 +7,7 @@
  */
 static char font[] = "envypn:pixelsize=11:antialias=false:autohint=false";
 static int borderpx = 1;
+#define histsize 4096
 
 /*
  * What program is execed by st depends of these precedence rules:
