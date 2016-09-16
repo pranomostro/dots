@@ -134,7 +134,9 @@ function kg
 	rlwrap -s 1000000 kg $argv
 end
 
-#until miranda returns with rim
+function fth
+	rlwrap -s 1000000 forth $argv
+end
 
 function hl
 	rlwrap -s 1000000 hl $argv
