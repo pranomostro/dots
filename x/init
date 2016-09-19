@@ -1,9 +1,9 @@
 #!/bin/sh
 
-XRESOURCES="/home/adrian/.xresources"
+XRESOURCES='/home/adrian/.xresources'
 
 if [ -f "$XRESOURCES" ]; then
-	xrdb "$XRESOURCES"
+	xrdb '$XRESOURCES'
 fi
 
 #configure the font stuff
@@ -20,7 +20,7 @@ xmodmap /home/adrian/proj/extra/dots/kb/neo.xmodmap
 
 #dimensions for bar
 
-barsize=$(echo $(wattr w $(lsw -r)) '-2*2-10' | bc)"x16+5+5"
+barsize=$(echo $(wattr w $(lsw -r)) '-2*2-10' | bc)'x16+5+5'
 
 #various startup programs, sorted after line length :I
 
