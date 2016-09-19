@@ -53,3 +53,10 @@ mod4 + E
 	chv -5
 mod4 + C
 	chv +5
+
+#mouse bindings, for focusing windows
+#of course, more sophisticated mouse stuff would be cool,
+#but belongs into another application
+
+~button1
+	focus $(underneath)
