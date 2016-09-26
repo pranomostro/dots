@@ -28,7 +28,6 @@ barinfo 2>/dev/null | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' -f '-ypn-
 bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'
 wew | yawee &>/dev/null &
 sxhkd &
-pprz &
 
 #ignore all bars
 barign &
