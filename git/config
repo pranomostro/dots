@@ -20,8 +20,8 @@
 	co="checkout"
 	cm="checkout master"
 
-	tl="tag -l -n16"
-	ta="tag -a"
+	tl="tag -l -n16 --sort v:refname"
+	ta="tag -as"
 
 	lm="log --pretty=oneline"
 	ls="log --pretty=oneline --stat"
