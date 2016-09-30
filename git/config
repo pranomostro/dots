@@ -7,6 +7,7 @@
 
 [alias]
 	pf="push --follow-tags"
+	please="push --force-with-lease"
 
 	ds="diff --staged"
 	dds="diff --staged --stat"
@@ -30,9 +31,9 @@
 	graph="log --graph --oneline --all --decorate --topo-order"
 	lg="log --pretty=format:\"%C(yellow)%h %ad%Cred%d %Creset%s%Cblue [%an]\" --decorate --date=relative --abbrev-commit --abbrev=10 --graph"
 
-	st="status"
+	st="status --short --branch"
 
-	ca="commit --amend"
+	ca="commit --amend --no-edit"
 	com="commit -Sa"
 
 	praise="blame"
