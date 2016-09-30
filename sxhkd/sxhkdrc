@@ -47,6 +47,8 @@ mod4 + f
 	fullscreen $(pfw)
 mod4 + y
 	mapw -u $(pfw)
+mod4 + i
+	grid
 
 #sound effects-boom!
 mod4 + E
