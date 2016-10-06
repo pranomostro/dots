@@ -2,7 +2,7 @@
 mod4 + Return
 	POS=$(echo ${GAP}'+'${BW} | bc); exec st -g '64x16+'${POS}'+'${POS}
 mod4 + space
-	dmenu_run -l 10 -nf black -nb white -sb '#ffb405' -fn 'envypn-15:pixelsize=15:antialias=false:autohint=false'
+	dmenu_run -l 10 -nf black -nb white -sb '#ffb405' -fn ${FONT}
 mod4 + q
 	pkill Xorg
 

@@ -24,7 +24,7 @@ export BW='6'
 export GAP='30'
 
 #for sam
-export EDITOR='sam'
+export EDITOR='ed'
 export VISUAL='sam'
 export FOREGROUND='#222222'
 export FONT='envypn:pixelsize=12:antialias=false:autohint=false'
