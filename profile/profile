@@ -4,7 +4,7 @@ PS1=' » '
 
 export LC_ALL='de_DE.UTF-8'
 export HISTSIZE='65536'
-export KLONGPATH='/usr/local/src/lang/klong/lib'
+
 
 #email stuff
 export MAIL='/usr/local/mail/pranomostro/INBOX'
@@ -14,7 +14,8 @@ export INDEX='/usr/local/mail/pranomostro'
 export PLAN9='/usr/local/plan9'
 export PATH_SEPARATOR=':'
 export PATH='/bin:/usr/bin:/usr/local/bin:/home/adrian/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
-export IPFS_PATH=/usr/local/ipfs
+export IPFS_PATH='/usr/local/ipfs'
+export KLONGPATH='/usr/local/src/klong/lib'
 
 #variables for wmutils
 export ACTIVE='0xffb405'
