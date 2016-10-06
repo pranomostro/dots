@@ -17,7 +17,6 @@ profile/profile \
 sxhkd/sxhkdrc \
 userdirs/dirs \
 x/init \
-x/resources \
 comp/stconf.h \
 comp/surfconf.h
 
@@ -35,7 +34,6 @@ $(HOME)/.msmtprc \
 $(HOME)/.profile \
 $(HOME)/.config/sxhkd/sxhkdrc \
 $(HOME)/.xinitrc \
-$(HOME)/.xresources \
 /usr/local/src/st/config.def.h \
 /usr/local/src/surf/config.def.h \
 /usr/local/src/slock/config.def.h
@@ -77,8 +75,6 @@ $(HOME)/.config/sxhkd/sxhkdrc: $(DOTDIR)/sxhkd/sxhkdrc
 $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
 	ln $< $@
 $(HOME)/.xinitrc: $(DOTDIR)/x/init
-	ln $< $@
-$(HOME)/.xresources: $(DOTDIR)/x/resources
 	ln $< $@
 
 #compiled configuration

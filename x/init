@@ -1,11 +1,5 @@
 #!/bin/sh
 
-XRESOURCES='/home/adrian/.xresources'
-
-if [ -f "$XRESOURCES" ]; then
-	xrdb '$XRESOURCES'
-fi
-
 #configure the font stuff
 
 xset +fp /usr/share/fonts/envypn
