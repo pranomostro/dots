@@ -20,6 +20,10 @@ export KLONGPATH='/usr/local/src/klong/lib'
 #variables for wmutils
 export ACTIVE='0xffb405'
 export INACTIVE='0x6b0bbf'
+
+#small border and gap
+export SB='2'
+export SG='5'
 export BW='6'
 export GAP='30'
 
