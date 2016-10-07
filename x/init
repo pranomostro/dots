@@ -13,7 +13,7 @@ xsetroot -cursor_name left_ptr
 xmodmap /home/adrian/proj/extra/dots/kb/neo.xmodmap
 
 #dimensions for bar
-barsize=$(echo $(wattr w $(lsw -r)) '-(2*'$SB')-(2*'$SG')' | bc)'x16+'$(echo $SG'+'$SB | bc)'+'$(echo $SG'+$SB)
+barsize=$(echo $(wattr w $(lsw -r))'-(2*'$SB'+2*'$SG')' | bc)'x16+'$(echo $SG'+'$SB | bc)'+'$(echo $SG'+'$SB | bc)
 
 #various startup programs, sorted after line length :I
 barinfo 2>/dev/null | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' -f '-ypn-envypn-Medium-R-Normal--15-150-75-75-C-90-ISO8859-1' &
