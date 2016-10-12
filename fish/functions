@@ -131,6 +131,7 @@ function kg
 end
 
 function fth
+	echo 'fth'
 	rlwrap -s 1000000 forth $argv
 end
 
