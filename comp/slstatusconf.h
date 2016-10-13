@@ -34,7 +34,7 @@
 - wifi_essid (wifi essid) [argument: wifi card interface name] */
 static const struct arg args[] = {
 	/* function	format        argument */
-	{ battery_perc,	"  batt: %s  |",	"BAT0"},
+	{ battery_perc,	" batt: %s  |",	"BAT0"},
 	{ vol_perc,	"  vol: %s  |", 	"default"},
 	{ ram_perc,	"  ram: %s  |",		NULL},
 	{ cpu_perc,	"  cpu: %s  |",		NULL},
