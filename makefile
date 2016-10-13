@@ -17,6 +17,8 @@ profile/profile \
 sxhkd/sxhkdrc \
 userdirs/dirs \
 x/init \
+comp/slockconf.h \
+comp/slstatusconf.h \
 comp/stconf.h \
 comp/surfconf.h
 
@@ -34,6 +36,7 @@ $(HOME)/.msmtprc \
 $(HOME)/.profile \
 $(HOME)/.config/sxhkd/sxhkdrc \
 $(HOME)/.xinitrc \
+/usr/local/src/slstatus/config.def.h \
 /usr/local/src/st/config.def.h \
 /usr/local/src/surf/config.def.h \
 /usr/local/src/slock/config.def.h
@@ -79,6 +82,8 @@ $(HOME)/.xinitrc: $(DOTDIR)/x/init
 
 #compiled configuration
 
+/usr/local/src/slstatus/config.def.h: $(DOTDIR)/comp/slstatusconf.h
+	ln $< $@
 /usr/local/src/st/config.def.h: $(DOTDIR)/comp/stconf.h
 	ln $< $@
 /usr/local/src/surf/config.def.h: $(DOTDIR)/comp/surfconf.h
