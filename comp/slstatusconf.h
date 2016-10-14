@@ -4,7 +4,7 @@
 #define UPDATE_INTERVAL 1
 
 /* text to show if no value can be retrieved */
-#define UNKNOWN_STR     "n/a"
+#define UNKNOWN_STR     "none"
 
 /* statusbar
 - battery_perc (battery percentage) [argument: battery name]
