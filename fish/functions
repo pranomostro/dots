@@ -12,10 +12,6 @@ end
 
 #having default options to commands which are always useful.
 
-function pacman
-	command pacman --color always $argv
-end
-
 function cl
 	command ls --color=always --group-directories-first $argv
 end
@@ -25,10 +21,6 @@ function ll
 end
 
 function l
-	command ls $argv
-end
-
-function ls
 	command ls $argv
 end
 
@@ -89,7 +81,7 @@ function tch
 end
 
 function python
-	python2.7 $argv
+	python3 $argv
 end
 
 function rm
@@ -130,12 +122,15 @@ function kg
 	rlwrap -s 1000000 kg $argv
 end
 
-function fth
-	rlwrap -s 1000000 forth -t $FORTHPATH/forth.fth $argv
-end
-
 function hl
 	rlwrap -s 1000000 hl $argv
+end
+
+function fth
+	rc -c 'if(~ $#* 0)
+		exec rlwrap -s 1000000 forth -t $FORTHPATH/forth.fth;
+	if not
+		exec rlwrap -s 1000000 forth $FORTHPATH/forth.fth $*' $argv
 end
 
 #Just to troll a little bit
