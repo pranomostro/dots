@@ -131,7 +131,7 @@ function kg
 end
 
 function fth
-	rlwrap -s 1000000 forth $argv
+	rlwrap -s 1000000 forth -t $FORTHPATH/forth.fth $argv
 end
 
 function hl

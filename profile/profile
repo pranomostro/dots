@@ -15,7 +15,8 @@ export PLAN9='/usr/local/plan9'
 export PATH_SEPARATOR=':'
 export PATH='/bin:/usr/bin:/usr/local/bin:/home/adrian/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 export IPFS_PATH='/usr/local/ipfs'
-export KLONGPATH='/usr/local/src/klong/lib'
+export KLONGPATH='/usr/local/lib/klong/'
+export FORTHPATH='/usr/local/lib/forth/'
 
 #variables for wmutils
 export ACTIVE='0xffb405'
