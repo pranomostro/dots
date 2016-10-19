@@ -127,10 +127,11 @@ function hl
 end
 
 function fth
-	rc -c 'if(~ $#* 0)
-		exec rlwrap -s 1000000 forth -t $FORTHPATH/forth.fth;
-	if not
-		exec rlwrap -s 1000000 forth $FORTHPATH/forth.fth $*' $argv
+	if [ (count $argv) -eq 0 ];
+		rlwrap -s 1000000 forth -t $FORTHPATH/forth.fth
+	else
+		rlwrap -s 1000000 forth $FORTHPATH/forth.fth $argv
+	end
 end
 
 #Just to troll a little bit
