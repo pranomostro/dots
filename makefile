@@ -6,6 +6,7 @@ comp/surfconf.h \
 fish/config \
 fish/fishd \
 fish/functions \
+gdb/init \
 git/config \
 gpg/agentconf \
 gpg/conf \
@@ -27,6 +28,7 @@ $(HOME)/.bashrc \
 $(HOME)/.config/fish/config.fish \
 $(HOME)/.config/fish/fishd.elektronengehirn \
 $(HOME)/.config/fish/functions.fish \
+$(HOME)/.gdbinit \
 $(HOME)/.gitconfig \
 $(HOME)/.gnupg/gpg-agent.conf \
 $(HOME)/.gnupg/gpg.conf \
@@ -58,6 +60,8 @@ $(HOME)/.config/fish/config.fish: $(DOTDIR)/fish/config
 $(HOME)/.config/fish/fishd.elektronengehirn: $(DOTDIR)/fish/fishd
 	ln $< $@
 $(HOME)/.config/fish/functions.fish: $(DOTDIR)/fish/functions
+	ln $< $@
+$(HOME)/.gdbinit: $(DOTDIR)/gdb/init
 	ln $< $@
 $(HOME)/.gitconfig: $(DOTDIR)/git/config
 	ln $< $@
