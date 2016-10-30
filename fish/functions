@@ -102,6 +102,10 @@ end
 
 #repls
 
+function nc
+	rlwrap -s 1000000 nc $argv
+end
+
 function rc
 	rlwrap -s 1000000 rc $argv
 end
