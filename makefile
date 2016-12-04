@@ -2,7 +2,6 @@
 DOTS=ag/ignore \
 bash/init \
 comp/stconf.h \
-comp/surfconf.h \
 fish/config \
 fish/fishd \
 fish/functions \
@@ -21,9 +20,8 @@ x/init \
 comp/slockconf.h \
 comp/slstatusconf.h \
 comp/stconf.h \
-comp/surfconf.h
 
-INSTALLED=$(HOME)/.agignore \
+INSTALLED=$(HOME)/.ignore \
 $(HOME)/.bashrc \
 $(HOME)/.config/fish/config.fish \
 $(HOME)/.config/fish/fishd.elektronengehirn \
@@ -40,7 +38,6 @@ $(HOME)/.config/sxhkd/sxhkdrc \
 $(HOME)/.xinitrc \
 /usr/local/src/slstatus/config.def.h \
 /usr/local/src/st/config.def.h \
-/usr/local/src/surf/config.def.h \
 /usr/local/src/slock/config.def.h
 
 DOTDIR = $(shell pwd)
@@ -51,7 +48,7 @@ all: $(DOTS) $(INSTALLED)
 clean:
 	rm -f $(INSTALLED)
 
-$(HOME)/.agignore: $(DOTDIR)/ag/ignore
+$(HOME)/.ignore: $(DOTDIR)/ag/ignore
 	ln $< $@
 $(HOME)/.bashrc: $(DOTDIR)/bash/init
 	ln $< $@
@@ -89,8 +86,6 @@ $(HOME)/.xinitrc: $(DOTDIR)/x/init
 /usr/local/src/slstatus/config.def.h: $(DOTDIR)/comp/slstatusconf.h
 	ln $< $@
 /usr/local/src/st/config.def.h: $(DOTDIR)/comp/stconf.h
-	ln $< $@
-/usr/local/src/surf/config.def.h: $(DOTDIR)/comp/surfconf.h
 	ln $< $@
 /usr/local/src/slock/config.def.h: $(DOTDIR)/comp/slockconf.h
 	ln $< $@
