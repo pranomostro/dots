@@ -34,14 +34,13 @@
 - wifi_essid (wifi essid) [argument: wifi card interface name] */
 static const struct arg args[] = {
 	/* function	format        argument */
-	{ battery_perc,	" batt: %s  |",	"BAT0"},
-	{ vol_perc,	"  vol: %s  |", 	"default"},
-	{ ram_perc,	"  ram: %s  |",		NULL},
-	{ cpu_perc,	"  cpu: %s  |",		NULL},
-	{ wifi_perc,	"  wifi: %s  |",	"wlp3s0"},
-	{ brightness,	"  light: %s  |",	"/sys/class/backlight/radeon_bl0/brightness"},
-	{ metrictime,	"  metric: %s  |",	NULL},
-	{ datetime,	"  date: %s  |",	"%F"},
-	{ datetime,	"  time: %s  |",	"%H:%M:%S"},
-	{ run_command,	"  play: %s",	"plng"}
+	{ battery_perc,	" batt: %s |",	"BAT0"},
+	{ ram_perc,	" ram: %s |",		NULL},
+	{ cpu_perc,	" cpu: %s |",		NULL},
+	{ wifi_perc,	" wifi: %s |",	"wlp3s0"},
+	{ brightness,	" light: %s |",	"/sys/class/backlight/radeon_bl0/brightness"},
+	{ metrictime,	" metric: %s |",	NULL},
+	{ datetime,	" date: %s |",	"%F"},
+	{ datetime,	" time: %s |",	"%H:%M:%S"},
+	{ run_command,	" play: %s",	"plng"}
 };

@@ -1,30 +1,15 @@
 #!/bin/sh
 
-#configure the font stuff
-
-xset +fp /usr/share/fonts/envypn
-xset fp rehash
-
 #maybe try out backgrounds by xsetroot
 
-xsetroot -name geb
 xsetroot -cursor_name left_ptr
 
 xmodmap /home/adrian/proj/extra/dots/kb/neo.xmodmap
 
-#dimensions for bar
-barsize=$(echo $(wattr w $(lsw -r))'-(2*'$SB'+2*'$SG')' | bc)'x16+'$(echo $SG'+'$SB | bc)'+'$(echo $SG'+'$SB | bc)
-
 #various startup programs, sorted after line length :I
-stdbuf -i0 -oL slstatus -o | lemonbar -g "$barsize" -B '#ffffff' -F '#000000' -f '-ypn-envypn-Medium-R-Normal--15-150-75-75-C-90-ISO8859-1' &
 bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'
-wew | yawee &>/dev/null &
-sxhkd &
-
-#ignore all bars
-barign &
 
 xflux -l 48.1 -g 11.6
 
-#sleep till the end of time
-exec sh -c 'while :; do sleep 10; done'
+slstatus &
+exec dwm

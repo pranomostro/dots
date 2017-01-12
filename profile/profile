@@ -32,6 +32,6 @@ export GAP='30'
 export EDITOR='sam'
 export VISUAL='sam'
 export FOREGROUND='#222222'
-export FONT='envypn:pixelsize=12:antialias=false:autohint=false'
+export FONT='monospace:size=8'
 
 startx
