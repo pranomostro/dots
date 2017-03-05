@@ -115,7 +115,7 @@ function ed
 end
 
 function scm
-	rlwrap -S '() ' -s 1000000 scm $argv
+	rlwrap -s 1000000 scm $argv
 end
 
 function lua
