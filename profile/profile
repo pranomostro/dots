@@ -5,7 +5,6 @@ PS1=' » '
 export LC_ALL='de_DE.UTF-8'
 export HISTSIZE='65536'
 
-
 #email stuff
 export MAIL='/usr/local/mail/pranomostro/INBOX'
 export INDEX='/usr/local/mail/pranomostro'

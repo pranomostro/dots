@@ -2,6 +2,8 @@ if status --is-interactive
 
 umask 066
 
+set -x GPG_TTY (tty)
+
 #apply z
 source /usr/local/bin/z
 
