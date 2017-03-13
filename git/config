@@ -6,7 +6,7 @@
 	symlinks=false
 
 [alias]
-	pf="push --follow-tags"
+	pf="push --tags --follow-tags"
 	please="push --force-with-lease"
 
 	ds="diff --staged"
