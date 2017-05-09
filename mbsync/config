@@ -1,7 +1,7 @@
 IMAPAccount gmail
 Host imap.gmail.com
 User pranomestro
-PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/etc/pass/gmail.gpg"
+PassCmd "spm show pranomestro@gmail"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
@@ -10,7 +10,7 @@ Account gmail
 
 MaildirStore gmail-local
 Path /usr/local/mail/pranomostro/
-Inbox /usr/local/mail/pranomostro/INBOX
+Inbox /usr/local/mail/pranomostro/inbox
 
 Channel gmail
 Master :gmail-remote:

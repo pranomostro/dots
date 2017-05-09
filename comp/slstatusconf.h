@@ -42,5 +42,5 @@ static const struct arg args[] = {
 	{ metrictime,	" metric: %s |",	NULL},
 	{ datetime,	" date: %s |",	"%F"},
 	{ datetime,	" time: %s |",	"%H:%M:%S"},
-	{ run_command,	" play: %s",	"plng"}
+	{ run_command,	" play: %s",	"plng 30"}
 };

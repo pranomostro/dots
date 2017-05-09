@@ -8,7 +8,7 @@ account gmail
 host smtp.gmail.com
 port 587
 auth on
-passwordeval gpg2 -dq /home/adrian/etc/pass/gmail.gpg
+passwordeval spm show pranomestro@gmail
 user pranomestro@gmail.com
 from pranomestro@gmail.com
 logfile /tmp/msmtp.log

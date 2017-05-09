@@ -20,7 +20,7 @@ mod4 + {c, h, p, b}
 	corner {tl, tr, bl, br}
 
 #group handling
-# with zmj and 0-9
+#with zmj and 0-9
 
 mod4 + {1, 2, 3, 4, 5, 6, 7, 8, 9}
 	grp -s $(pfw) {1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -50,7 +50,8 @@ mod4 + y
 mod4 + i
 	grid
 
-#sound effects-boom!
+#sound effects
+
 mod4 + E
 	chv -5
 mod4 + C

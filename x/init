@@ -4,7 +4,7 @@
 
 xsetroot -cursor_name left_ptr
 
-xmodmap /home/adrian/proj/extra/dots/kb/neo.xmodmap
+xmodmap $HOME/.xmodmap
 
 #various startup programs, sorted after line length :I
 bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'

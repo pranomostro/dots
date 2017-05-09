@@ -8,7 +8,7 @@ set -x GPG_TTY (tty)
 source /usr/local/bin/z
 
 #apply the functions to the current shell
-source /home/adrian/.config/fish/functions.fish
+source $HOME/.config/fish/functions.fish
 
 #prompts
 

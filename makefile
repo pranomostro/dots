@@ -37,6 +37,7 @@ $(HOME)/.msmtprc \
 $(HOME)/.profile \
 $(HOME)/.config/sxhkd/sxhkdrc \
 $(HOME)/.xinitrc \
+$(HOME)/.xmodmap \
 /usr/local/src/dwm/config.h \
 /usr/local/src/slstatus/config.h \
 /usr/local/src/st/config.h \
@@ -81,6 +82,8 @@ $(HOME)/.config/sxhkd/sxhkdrc: $(DOTDIR)/sxhkd/sxhkdrc
 $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
 	ln $< $@
 $(HOME)/.xinitrc: $(DOTDIR)/x/init
+	ln $< $@
+$(HOME)/.xmodmap: $(DOTDIR)/kb/neo.xmodmap
 	ln $< $@
 
 #compiled configuration

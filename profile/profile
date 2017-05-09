@@ -6,13 +6,13 @@ export LC_ALL='de_DE.UTF-8'
 export HISTSIZE='65536'
 
 #email stuff
-export MAIL='/usr/local/mail/pranomostro/INBOX'
+export MAIL='/usr/local/mail/pranomostro/inbox'
 export INDEX='/usr/local/mail/pranomostro'
 
 #everything remotely path related
 export PLAN9='/usr/local/plan9'
 export PATH_SEPARATOR=':'
-export PATH='/bin:/usr/bin:/usr/local/bin:/home/adrian/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+export PATH='/bin:/usr/bin:/usr/local/bin:'$HOME'/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 export IPFS_PATH='/usr/local/ipfs'
 export KLONGPATH='/usr/local/lib/klong/'
 export FORTHPATH='/usr/local/lib/forth/'
