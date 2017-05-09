@@ -22,7 +22,7 @@ comp/slockconf.h \
 comp/slstatusconf.h \
 comp/stconf.h \
 
-INSTALLED=$(HOME)/.ignore \
+INSTALLED=$(HOME)/.agignore \
 $(HOME)/.bashrc \
 $(HOME)/.config/fish/config.fish \
 $(HOME)/.config/fish/fishd.elektronengehirn \

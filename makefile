@@ -5,7 +5,7 @@ all: $(DOTS) $(INSTALLED)
 clean:
 	rm -f $(INSTALLED)
 
-$(HOME)/.ignore: $(DOTDIR)/ag/ignore
+$(HOME)/.agignore: $(DOTDIR)/ag/ignore
 	ln $< $@
 $(HOME)/.bashrc: $(DOTDIR)/bash/init
 	ln $< $@
