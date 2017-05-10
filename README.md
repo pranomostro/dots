@@ -15,7 +15,7 @@ Thanks
 ------
 
 Thanks to everybody developing configurable, open
-and good software. It can't be said enough. Thanks to
+and good software. It can't be said enough. Also many thanks to
 [cyrus-and](https://github.com/cyrus-and) for the awesome [gdb
 configuration](https://github.com/cyrus-and/gdb-dashboard).
 
