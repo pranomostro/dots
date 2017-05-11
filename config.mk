@@ -1,4 +1,9 @@
 #actual config files everything depends on
+
+HOME=/home/adrian
+DOTDIR=$(HOME)/proj/begun/dots
+SRCDIR=/usr/local/src
+
 DOTS= \
 	ag/ignore \
 	bash/init \
@@ -40,10 +45,8 @@ INSTALLED= \
 	$(HOME)/.config/sxhkd/sxhkdrc \
 	$(HOME)/.xinitrc \
 	$(HOME)/.xmodmap \
-	/usr/local/src/dwm/config.h \
-	/usr/local/src/slstatus/config.h \
-	/usr/local/src/st/config.h \
-	/usr/local/src/slock/config.h
+	$(SRCDIR)/dwm/config.h \
+	$(SRCDIR)/slstatus/config.h \
+	$(SRCDIR)/st/config.h \
+	$(SRCDIR)/slock/config.h
 
-DOTDIR=$(shell pwd)
-HOME=$(shell echo $$HOME)

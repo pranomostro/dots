@@ -1,54 +1,54 @@
 include config.mk
 
-all: $(DOTS) $(INSTALLED)
+install: $(DOTS) $(INSTALLED)
 
-clean:
+uninstall:
 	rm -f $(INSTALLED)
 
 $(HOME)/.agignore: $(DOTDIR)/ag/ignore
-	ln $< $@
+	ln $? $@
 $(HOME)/.bashrc: $(DOTDIR)/bash/init
-	ln $< $@
+	ln $? $@
 $(HOME)/.config/fish/config.fish: $(DOTDIR)/fish/config
-	ln $< $@
+	ln $? $@
 $(HOME)/.config/fish/fishd.elektronengehirn: $(DOTDIR)/fish/fishd
-	ln $< $@
+	ln $? $@
 $(HOME)/.config/fish/functions.fish: $(DOTDIR)/fish/functions
-	ln $< $@
+	ln $? $@
 $(HOME)/.gdbinit: $(DOTDIR)/gdb/init
-	ln $< $@
+	ln $? $@
 $(HOME)/.gitconfig: $(DOTDIR)/git/config
-	ln $< $@
+	ln $? $@
 $(HOME)/.gnupg/gpg-agent.conf: $(DOTDIR)/gpg/agentconf
-	ln $< $@
+	ln $? $@
 $(HOME)/.gnupg/gpg.conf: $(DOTDIR)/gpg/conf
-	ln $< $@
+	ln $? $@
 $(HOME)/.mailrc: $(DOTDIR)/mail/config
-	ln $< $@
+	ln $? $@
 $(HOME)/.mbsyncrc: $(DOTDIR)/mbsync/config
-	ln $< $@
+	ln $? $@
 $(HOME)/.msmtprc: $(DOTDIR)/msmtp/config
-	ln $< $@
+	ln $? $@
 $(HOME)/.profile: $(DOTDIR)/profile/profile
-	ln $< $@
+	ln $? $@
 $(HOME)/.config/sxhkd/sxhkdrc: $(DOTDIR)/sxhkd/sxhkdrc
-	ln $< $@
+	ln $? $@
 $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
-	ln $< $@
+	ln $? $@
 $(HOME)/.xinitrc: $(DOTDIR)/x/init
-	ln $< $@
+	ln $? $@
 $(HOME)/.xmodmap: $(DOTDIR)/kb/neo.xmodmap
-	ln $< $@
+	ln $? $@
 
 #compiled configuration
 
-/usr/local/src/dwm/config.h: $(DOTDIR)/comp/dwmconf.h
-	ln $< $@
-/usr/local/src/slstatus/config.h: $(DOTDIR)/comp/slstatusconf.h
-	ln $< $@
-/usr/local/src/st/config.h: $(DOTDIR)/comp/stconf.h
-	ln $< $@
-/usr/local/src/slock/config.h: $(DOTDIR)/comp/slockconf.h
-	ln $< $@
+$(SRCDIR)/dwm/config.h: $(DOTDIR)/comp/dwmconf.h
+	ln $? $@
+$(SRCDIR)/slstatus/config.h: $(DOTDIR)/comp/slstatusconf.h
+	ln $? $@
+$(SRCDIR)/st/config.h: $(DOTDIR)/comp/stconf.h
+	ln $? $@
+$(SRCDIR)/slock/config.h: $(DOTDIR)/comp/slockconf.h
+	ln $? $@
 
-.PHONY: all clean
+.PHONY: install uninstall
