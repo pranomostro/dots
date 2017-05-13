@@ -1,7 +1,7 @@
 #actual config files everything depends on
 
 HOME=/home/adrian
-DOTDIR=$(HOME)/proj/begun/dots
+DOTDIR=$(HOME)/proj/extra/dots
 SRCDIR=/usr/local/src
 
 DOTS= \
@@ -17,6 +17,7 @@ DOTS= \
 	gpg/conf \
 	kb/neo.xmodmap \
 	mail/config \
+	mblaze/profile \
 	mbsync/config \
 	msmtp/config \
 	profile/profile \
@@ -39,6 +40,7 @@ INSTALLED= \
 	$(HOME)/.gnupg/gpg-agent.conf \
 	$(HOME)/.gnupg/gpg.conf \
 	$(HOME)/.mailrc \
+	$(HOME)/.mblaze/profile \
 	$(HOME)/.mbsyncrc \
 	$(HOME)/.msmtprc \
 	$(HOME)/.profile \
