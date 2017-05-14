@@ -34,7 +34,7 @@ tls_fingerprint 30:2A:06:B8:CF:A8:5B:93:66:5A:44:66:E2:BB:84:05:FE:80:95:3F:5A:F
 
 passwordeval "spm show pranomostro@posteo"
 user pranomostro@posteo.net
-from pranomostro@posteo.de
+from pranomostro@posteo.net
 
 #set the default account
 account default: posteo
