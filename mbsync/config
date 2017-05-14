@@ -9,14 +9,14 @@ IMAPStore gmail-remote
 Account gmail
 
 MaildirStore gmail-local
-Path "/usr/local/mail/pranomostro/gmail/"
-Inbox "/usr/local/mail/pranomostro/gmail/inbox/"
-Trash "/usr/local/mail/pranomostro/gmail/trash/"
+Inbox "/usr/local/mail/inbox/"
+Path "/usr/local/mail/gmail/"
+Trash "/usr/local/mail/gmail/trash/"
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
-Patterns "INBOX" "[Gmail].All/Sent Mail" "[Gmail].All/Drafts" "[Gmail].All/Trash" "[Gmail].All/Spam"
+Patterns *
 Create Both
 Expunge Both
 SyncState *
@@ -33,9 +33,9 @@ IMAPSTore posteo-remote
 Account posteo
 
 MaildirStore posteo-local
-Path "/usr/local/mail/pranomostro/posteo/"
-Inbox "/usr/local/mail/pranomostro/posteo/inbox/"
-Trash "/usr/local/mail/pranomostro/posteo/trash/"
+Inbox "/usr/local/mail/inbox/"
+Path "/usr/local/mail/posteo/"
+Trash "/usr/local/mail/posteo/trash/"
 
 Channel posteo
 Master :posteo-remote:
