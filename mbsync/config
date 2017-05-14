@@ -11,7 +11,6 @@ Account gmail
 MaildirStore gmail-local
 Inbox "/usr/local/mail/inbox/"
 Path "/usr/local/mail/gmail/"
-Trash "/usr/local/mail/gmail/trash/"
 
 Channel gmail
 Master :gmail-remote:
@@ -35,7 +34,6 @@ Account posteo
 MaildirStore posteo-local
 Inbox "/usr/local/mail/inbox/"
 Path "/usr/local/mail/posteo/"
-Trash "/usr/local/mail/posteo/trash/"
 
 Channel posteo
 Master :posteo-remote:
