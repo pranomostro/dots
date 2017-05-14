@@ -5,16 +5,42 @@ PassCmd "spm show pranomestro@gmail"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
-IMAPSTore gmail-remote
+IMAPStore gmail-remote
 Account gmail
 
 MaildirStore gmail-local
-Path /usr/local/mail/pranomostro/
-Inbox /usr/local/mail/pranomostro/inbox
+Path "/usr/local/mail/pranomostro/gmail/"
+Inbox "/usr/local/mail/pranomostro/gmail/inbox/"
+Trash "/usr/local/mail/pranomostro/gmail/trash/"
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
-Patterns *
+Patterns "INBOX" "[Gmail].All/Sent Mail" "[Gmail].All/Drafts" "[Gmail].All/Trash" "[Gmail].All/Spam"
 Create Both
+Expunge Both
+SyncState *
+
+IMAPAccount posteo
+Host posteo.de
+User pranomostro@posteo.net
+AuthMechs LOGIN
+PassCmd "spm show pranomostro@posteo"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/posteo.crt
+
+IMAPSTore posteo-remote
+Account posteo
+
+MaildirStore posteo-local
+Path "/usr/local/mail/pranomostro/posteo/"
+Inbox "/usr/local/mail/pranomostro/posteo/inbox/"
+Trash "/usr/local/mail/pranomostro/posteo/trash/"
+
+Channel posteo
+Master :posteo-remote:
+Slave :posteo-local:
+Patterns "INBOX" "Drafts" "Sent" "Trash"
+Create Both
+Expunge Both
 SyncState *

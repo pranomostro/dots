@@ -1,20 +1,40 @@
-#global settings
+#defaults
 defaults
+
+auth on
+tls_certcheck on
 tls on
-#tls_starttls on
 tls_starttls off
-tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+logfile /tmp/msmtp.log
 
 #gmail account
 account gmail
+
 host smtp.gmail.com
+
 #port 587
 port 465
-auth on
-passwordeval spm show pranomestro@gmail
+
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+
+passwordeval "spm show pranomestro@gmail"
 user pranomestro
 from pranomestro@gmail.com
-logfile /tmp/msmtp.log
+
+#posteo account
+account posteo
+
+host posteo.de
+
+#port 587
+port 465
+
+tls_fingerprint 30:2A:06:B8:CF:A8:5B:93:66:5A:44:66:E2:BB:84:05:FE:80:95:3F:5A:FE:D1:08:DB:3B:B0:0D:7C:42:B4:39
+
+passwordeval "spm show pranomostro@posteo"
+user pranomostro@posteo.net
+from pranomostro@posteo.de
 
 #set the default account
-account default: gmail
+account default: posteo
