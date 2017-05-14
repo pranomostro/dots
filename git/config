@@ -1,5 +1,5 @@
 [user]
-	email=pranomestro@gmail.com
+	email=pranomostro@posteo.de
 	name=pranomostro
 [core]
 	editor=rlwrap -s 1000000 ed

@@ -6,8 +6,8 @@ export LC_ALL='de_DE.UTF-8'
 export HISTSIZE='65536'
 
 #email stuff
-export MAIL='/usr/local/mail/pranomostro/inbox'
-export INDEX='/usr/local/mail/pranomostro'
+export MAIL='/usr/local/mail/pranomostro/gmail/inbox/'
+export INDEX='/usr/local/mail/pranomostro/gmail/'
 
 #everything remotely path related
 export PLAN9='/usr/local/plan9'
