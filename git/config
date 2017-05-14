@@ -1,6 +1,7 @@
 [user]
 	email=pranomostro@posteo.net
 	name=pranomostro
+	signkey=AA269DA61B54712C
 [core]
 	editor=rlwrap -s 1000000 ed
 	symlinks=false
