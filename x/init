@@ -6,11 +6,9 @@ xsetroot -cursor_name left_ptr
 
 xmodmap $HOME/.xmodmap
 
-#various startup programs, sorted after line length :I
-bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'
-
+bgs -R -C '#fefefe' '/usr/share/wall/aleph.jpg'
 xflux -l 48.1 -g 11.6
-
 slstatus &
 batwatch &
+
 exec dwm
