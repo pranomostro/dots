@@ -23,7 +23,7 @@
 	cm="checkout master"
 
 	tl="tag -l -n16 --sort v:refname"
-	ta="tag -as"
+	ta="tag -s"
 
 	lm="log --pretty=oneline"
 	ls="log --pretty=oneline --stat"
