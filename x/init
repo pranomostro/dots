@@ -12,4 +12,5 @@ bgs -R -C '#ffffff' '/usr/share/wall/aleph.jpg'
 xflux -l 48.1 -g 11.6
 
 slstatus &
+batwatch &
 exec dwm
