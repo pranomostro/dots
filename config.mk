@@ -17,6 +17,7 @@ DOTS= \
 	gpg/conf \
 	kb/neo.xmodmap \
 	mail/config \
+	mblaze/filter \
 	mblaze/profile \
 	mbsync/config \
 	msmtp/config \
@@ -40,6 +41,7 @@ INSTALLED= \
 	$(HOME)/.gnupg/gpg-agent.conf \
 	$(HOME)/.gnupg/gpg.conf \
 	$(HOME)/.mailrc \
+	$(HOME)/.mblaze/filter \
 	$(HOME)/.mblaze/profile \
 	$(HOME)/.mbsyncrc \
 	$(HOME)/.msmtprc \

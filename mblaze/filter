@@ -1,0 +1,4 @@
+text/plain: dwpd -
+multipart/signed: dwpd -
+multipart/encrypted: dwpd -
+application/pgp-encrypted: dpwd -

@@ -25,6 +25,8 @@ $(HOME)/.gnupg/gpg.conf: $(DOTDIR)/gpg/conf
 	ln $? $@
 $(HOME)/.mailrc: $(DOTDIR)/mail/config
 	ln $? $@
+$(HOME)/.mblaze/filter: $(DOTDIR)/mblaze/filter
+	ln $? $@
 $(HOME)/.mblaze/profile: $(DOTDIR)/mblaze/profile
 	ln $? $@
 $(HOME)/.mbsyncrc: $(DOTDIR)/mbsync/config
