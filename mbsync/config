@@ -9,7 +9,7 @@ IMAPStore gmail-remote
 Account gmail
 
 MaildirStore gmail-local
-Inbox "/usr/local/mail/inbox/"
+Inbox "/usr/local/mail/gmail/INBOX/"
 Path "/usr/local/mail/gmail/"
 
 Channel gmail
@@ -32,13 +32,13 @@ IMAPSTore posteo-remote
 Account posteo
 
 MaildirStore posteo-local
-Inbox "/usr/local/mail/inbox/"
+Inbox "/usr/local/mail/posteo/INBOX/"
 Path "/usr/local/mail/posteo/"
 
 Channel posteo
 Master :posteo-remote:
 Slave :posteo-local:
-Patterns "INBOX" "Drafts" "Sent" "Trash"
+Patterns *
 Create Both
 Expunge Both
 SyncState *
