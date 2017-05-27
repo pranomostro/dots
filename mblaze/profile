@@ -1,1 +1,2 @@
 Sendmail: msmtp
+outbox: /usr/local/mail/outbox
