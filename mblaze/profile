@@ -1,2 +1,3 @@
 Sendmail: msmtp
+Local-Mailbox: pranomostro@posteo.net
 outbox: /usr/local/mail/outbox
