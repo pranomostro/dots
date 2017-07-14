@@ -46,6 +46,10 @@ function curl
 	command curl -s $argv
 end
 
+function python
+	python3 -q $argv
+end
+
 #definition of new commands or just abbreviations
 
 function g
@@ -74,10 +78,6 @@ end
 
 function tch
 	touch $argv
-end
-
-function python
-	python3 $argv
 end
 
 function rm
