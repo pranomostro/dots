@@ -11,11 +11,12 @@ Account gmail
 MaildirStore gmail-local
 Inbox "/usr/local/mail/gmail/INBOX/"
 Path "/usr/local/mail/gmail/"
+SubFolders Verbatim
 
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
-Patterns *
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
 Create Both
 Expunge Both
 SyncState *
@@ -42,3 +43,13 @@ Patterns *
 Create Both
 Expunge Both
 SyncState *
+
+#TODO: configure tum profile
+
+#IMAPAccount tum
+#Host mail.in.tum.de
+#User regenfus@in.tum.de
+#AuthMechs LOGIN
+#PassCmd "spm show regenfus@lxhalle.in.tum.de"
+#SSLType IMAPS
+#CertificateFile /etc/ssl/certs/ca-certificates.crt
