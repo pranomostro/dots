@@ -3,3 +3,4 @@ multipart/encrypted: mgpg -
 multipart/mixed: mgpg -
 multipart/signed: mgpg -
 text/plain: dwpd -
+text/html: html2text --unicode-snob -
