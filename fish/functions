@@ -1,13 +1,9 @@
 #function definition for the fish shell
 
-#fortune-likes, entertaining!
+#fortune-likes
 
 function troll
 	command fortune /usr/local/share/troll
-end
-
-function bullshit
-	command bullshit /usr/local/share/bullshit
 end
 
 #having default options to commands which are always useful.
