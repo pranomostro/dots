@@ -1,7 +1,7 @@
 #actual config files everything depends on
 
 HOME=/home/adrian
-DOTDIR=$(HOME)/proj/extra/dots
+DOTDIR=$(HOME)/proj/misc/dots
 SRCDIR=/usr/local/src
 
 DOTS= \
