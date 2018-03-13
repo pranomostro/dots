@@ -22,7 +22,6 @@ DOTS= \
 	mbsync/config \
 	msmtp/config \
 	profile/profile \
-	sxhkd/sxhkdrc \
 	userdirs/dirs \
 	x/init \
 	comp/dwmconf.h \
@@ -46,7 +45,6 @@ INSTALLED= \
 	$(HOME)/.mbsyncrc \
 	$(HOME)/.msmtprc \
 	$(HOME)/.profile \
-	$(HOME)/.config/sxhkd/sxhkdrc \
 	$(HOME)/.xinitrc \
 	$(HOME)/.xmodmap \
 	$(SRCDIR)/dwm/config.h \

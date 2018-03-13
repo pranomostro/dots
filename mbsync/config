@@ -46,10 +46,26 @@ SyncState *
 
 #TODO: configure tum profile
 
-#IMAPAccount tum
-#Host mail.in.tum.de
-#User regenfus@in.tum.de
-#AuthMechs LOGIN
-#PassCmd "spm show regenfus@lxhalle.in.tum.de"
-#SSLType IMAPS
-#CertificateFile /etc/ssl/certs/ca-certificates.crt
+IMAPAccount tum
+Host mail.in.tum.de
+User regenfus@in.tum.de
+AuthMechs LOGIN
+PassCmd "spm show regenfus@lxhalle.in.tum.de"
+SSLType STARTTLS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPSTore tum-remote
+Account tum
+
+MaildirStore tum-local
+Inbox "/usr/local/mail/tum/INBOX/"
+Path "/usr/local/mail/posteo/"
+SubFolders Verbatim
+
+Channel tum
+Master :tum-remote:
+Slave :tum-local:
+Patterns *
+Create Both
+Expunge Both
+SyncState *

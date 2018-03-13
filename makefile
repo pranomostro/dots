@@ -35,8 +35,6 @@ $(HOME)/.msmtprc: $(DOTDIR)/msmtp/config
 	ln $? $@
 $(HOME)/.profile: $(DOTDIR)/profile/profile
 	ln $? $@
-$(HOME)/.config/sxhkd/sxhkdrc: $(DOTDIR)/sxhkd/sxhkdrc
-	ln $? $@
 $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
 	ln $? $@
 $(HOME)/.xinitrc: $(DOTDIR)/x/init
