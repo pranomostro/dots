@@ -13,13 +13,7 @@ export INDEX='/usr/local/mail/'
 export PLAN9='/usr/local/plan9'
 export PATH_SEPARATOR=':'
 export PATH='/bin:/usr/bin:/usr/local/bin:'$HOME'/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
-export IPFS_PATH='/usr/local/ipfs'
 export KLONGPATH='/usr/local/lib/klong/'
-export FORTHPATH='/usr/local/lib/forth/'
-
-#variables for wmutils
-export ACTIVE='0xffb405'
-export INACTIVE='0x6b0bbf'
 
 #small border and gap
 export SB='2'
@@ -30,7 +24,6 @@ export GAP='30'
 #for sam
 export EDITOR='sam'
 export VISUAL='sam'
-export FOREGROUND='#222222'
 export FONT='monospace:size=8'
 
 startx
