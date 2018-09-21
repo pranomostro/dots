@@ -21,9 +21,8 @@ export SG='5'
 export BW='6'
 export GAP='30'
 
-#for sam
-export EDITOR='sam'
-export VISUAL='sam'
+export EDITOR='vis'
+export VISUAL='vis'
 export FONT='monospace:size=8'
 
 startx
