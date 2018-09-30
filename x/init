@@ -6,7 +6,7 @@ xsetroot -cursor_name left_ptr
 
 xmodmap $HOME/.xmodmap
 
-bgs -R -C '#fefefe' '/usr/share/wall/aleph.jpg'
+bgs -R -C '#fefefe' '/usr/share/wall/reward.png'
 xflux -l 48.1 -g 11.6
 slstatus &
 batwatch &
