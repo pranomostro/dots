@@ -13,8 +13,6 @@ $(HOME)/.bash_profile: $(DOTDIR)/bash/profile
 	ln $? $@
 $(HOME)/.config/fish/config.fish: $(DOTDIR)/fish/config
 	ln $? $@
-$(HOME)/.config/fish/fishd.elektronengehirn: $(DOTDIR)/fish/fishd
-	ln $? $@
 $(HOME)/.config/fish/functions.fish: $(DOTDIR)/fish/functions
 	ln $? $@
 $(HOME)/.gdbinit: $(DOTDIR)/gdb/init

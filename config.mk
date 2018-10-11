@@ -10,7 +10,6 @@ DOTS= \
 	bash/profile \
 	comp/stconf.h \
 	fish/config \
-	fish/fishd \
 	fish/functions \
 	gdb/init \
 	git/config \
@@ -34,7 +33,6 @@ INSTALLED= \
 	$(HOME)/.bashrc \
 	$(HOME)/.bash_profile \
 	$(HOME)/.config/fish/config.fish \
-	$(HOME)/.config/fish/fishd.elektronengehirn \
 	$(HOME)/.config/fish/functions.fish \
 	$(HOME)/.gdbinit \
 	$(HOME)/.gitconfig \
