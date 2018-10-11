@@ -26,3 +26,5 @@ export VISUAL='vis'
 export FONT='monospace:size=8'
 
 startx
+
+[ -f $HOME/.bashrc ] && ./bashrc

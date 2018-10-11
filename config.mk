@@ -7,6 +7,7 @@ SRCDIR=/usr/local/src
 DOTS= \
 	ag/ignore \
 	bash/init \
+	bash/profile \
 	comp/stconf.h \
 	fish/config \
 	fish/fishd \
@@ -21,7 +22,6 @@ DOTS= \
 	mblaze/profile \
 	mbsync/config \
 	msmtp/config \
-	profile/profile \
 	userdirs/dirs \
 	x/init \
 	comp/dwmconf.h \
@@ -32,6 +32,7 @@ DOTS= \
 INSTALLED= \
 	$(HOME)/.agignore \
 	$(HOME)/.bashrc \
+	$(HOME)/.bash_profile \
 	$(HOME)/.config/fish/config.fish \
 	$(HOME)/.config/fish/fishd.elektronengehirn \
 	$(HOME)/.config/fish/functions.fish \
@@ -44,7 +45,6 @@ INSTALLED= \
 	$(HOME)/.mblaze/profile \
 	$(HOME)/.mbsyncrc \
 	$(HOME)/.msmtprc \
-	$(HOME)/.profile \
 	$(HOME)/.xinitrc \
 	$(HOME)/.xmodmap \
 	$(SRCDIR)/dwm/config.h \

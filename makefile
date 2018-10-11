@@ -9,6 +9,8 @@ $(HOME)/.agignore: $(DOTDIR)/ag/ignore
 	ln $? $@
 $(HOME)/.bashrc: $(DOTDIR)/bash/init
 	ln $? $@
+$(HOME)/.bash_profile: $(DOTDIR)/bash/profile
+	ln $? $@
 $(HOME)/.config/fish/config.fish: $(DOTDIR)/fish/config
 	ln $? $@
 $(HOME)/.config/fish/fishd.elektronengehirn: $(DOTDIR)/fish/fishd
@@ -32,8 +34,6 @@ $(HOME)/.mblaze/profile: $(DOTDIR)/mblaze/profile
 $(HOME)/.mbsyncrc: $(DOTDIR)/mbsync/config
 	ln $? $@
 $(HOME)/.msmtprc: $(DOTDIR)/msmtp/config
-	ln $? $@
-$(HOME)/.profile: $(DOTDIR)/profile/profile
 	ln $? $@
 $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
 	ln $? $@
