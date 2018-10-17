@@ -1,6 +1,6 @@
 #actual config files everything depends on
 
-HOME=/home/adrian
+HOME=/home/pranomostro
 DOTDIR=$(HOME)/proj/misc/dots
 SRCDIR=/usr/local/src
 
@@ -15,7 +15,6 @@ DOTS= \
 	git/config \
 	gpg/agentconf \
 	gpg/conf \
-	kb/neo.xmodmap \
 	mail/config \
 	mblaze/filter \
 	mblaze/profile \
@@ -23,6 +22,7 @@ DOTS= \
 	msmtp/config \
 	userdirs/dirs \
 	x/init \
+	x/neo \
 	comp/dwmconf.h \
 	comp/slockconf.h \
 	comp/slstatusconf.h \

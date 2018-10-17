@@ -3,7 +3,7 @@
 #include "slstatus.h"
 
 /* interval between updates (in ms) */
-static const int interval = 1000;
+const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "none";
@@ -51,16 +51,18 @@ static const char unknown_str[] = "none";
  * wifi_perc            WiFi signal in percent          interface name
  * wifi_essid           WiFi ESSID                      interface name
  */
+
 static const struct arg args[] = {
 	/* function format          argument */
-	{ battery_perc,	"| batt: %s%% |",	"BAT0" },
-	{ ram_perc,	" ram: %s%% |",		NULL },
-	{ cpu_perc,	" cpu: %s%% |",		NULL },
-	{ wifi_perc,	" wifi: %s%% |",	"wlp3s0" },
-	{ light,	" light: %s |",	"/sys/class/backlight/radeon_bl0/brightness" },
-	{ run_command,	" vol: %s |",	"amixer -M get Master | awk 'END { match($4, /[0-9][0-9][0-9]?%/, a); print(a[0]); }'" },
-	{ metrictime,	" metric: %s |",	NULL },
-	{ datetime,	" date: %s |",	"%F" },
-	{ datetime,	" time: %s |",	"%H:%M:%S" },
-	{ run_command,	" play: %s",	"plng 30" },
+	{ battery_state,	"| %s",			"BAT1" },
+	{ battery_perc,		"batt: %s%% |",		"BAT1" },
+	{ ram_perc,		" ram: %s%% |",		NULL },
+	{ cpu_perc,		" cpu: %s%% |",		NULL },
+	{ wifi_perc,		" wifi: %s%% |",	"wlp2s0" },
+	{ light,		" light: %s |",		"/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight/brightness" },
+//	{ vol_perc,		" vol: %s |",		"/dev/snd/hwC0D0" },
+	{ metrictime,		" metric: %s |",	NULL },
+	{ datetime,		" date: %s |",		"%F" },
+	{ datetime,		" time: %s |",		"%H:%M:%S" },
+	{ run_command,		" play: %s",		"plng 30" },
 };

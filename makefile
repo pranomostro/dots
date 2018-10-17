@@ -37,7 +37,7 @@ $(HOME)/.config/user-dirs.dirs: $(DOTDIR)/userdirs/dirs
 	ln $? $@
 $(HOME)/.xinitrc: $(DOTDIR)/x/init
 	ln $? $@
-$(HOME)/.xmodmap: $(DOTDIR)/kb/neo.xmodmap
+$(HOME)/.xmodmap: $(DOTDIR)/x/neo
 	ln $? $@
 
 #compiled configuration

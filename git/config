@@ -3,7 +3,7 @@
 	name=pranomostro
 
 [core]
-	editor=rlwrap -s 1000000 ed
+	editor=vis
 	symlinks=false
 
 [alias]
@@ -35,7 +35,7 @@
 	st="status --short --branch"
 
 	ca="commit --amend --no-edit"
-	com="commit -Sa"
+	com="commit -a"
 	praise="blame"
 
 [push]
