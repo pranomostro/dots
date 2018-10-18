@@ -27,4 +27,4 @@ export FONT='monospace:size=10'
 
 startx
 
-[ -f $HOME/.bashrc ] && ./bashrc
+[ -f $HOME/.bashrc ] && ./.bashrc

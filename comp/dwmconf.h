@@ -6,7 +6,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=8";
+static const char dmenufont[]       = "monospace:size=10";
 static const char col_white[]       = "#ffffff";
 static const char col_gray[]        = "#444444";
 static const char col_black[]       = "#000000";
@@ -57,7 +57,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-l", "10", "-fn", dmenufont, "-nb", col_white, "-nf", col_black, "-sb", col_yellow, NULL };
-static const char *termcmd[]  = { "st", "-f", fonts };
+static const char *termcmd[]  = { "st" };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

@@ -13,7 +13,7 @@ source $HOME/.config/fish/functions.fish
 #prompts
 
 function fish_greeting
-	true
+	grep (date '+%d\.%m') ~/etc/lists/contacts | awk -F: '{ print("birthday:", $1) }'
 end
 
 function fish_prompt
