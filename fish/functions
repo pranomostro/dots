@@ -118,6 +118,10 @@ function hl
 	rlwrap -s 1000000 hl $argv
 end
 
+function ocaml
+	rlwrap -s 100000 ocaml $argv
+end
+
 #Just to troll a little bit
 
 function emacs
