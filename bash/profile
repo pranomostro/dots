@@ -10,6 +10,7 @@ export MAIL='/usr/local/mail/inbox/'
 export INDEX='/usr/local/mail/'
 
 #everything remotely path related
+export LD_LIBRARY_PATH '/usr/local/lib64'
 export PLAN9='/usr/local/plan9'
 export PATH_SEPARATOR=':'
 export PATH='/bin:/usr/bin:/usr/local/bin:'$HOME'/bin:/usr/local/plan9/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'

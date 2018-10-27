@@ -60,7 +60,7 @@ static const struct arg args[] = {
 	{ cpu_perc,		" cpu: %s%% |",		NULL },
 	{ wifi_perc,		" wifi: %s%% |",	"wlp2s0" },
 	{ light,		" light: %s |",		"/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight/brightness" },
-//	{ vol_perc,		" vol: %s |",		"/dev/snd/hwC0D0" },
+	//{ vol_perc,		" vol: %s |",		"/dev/snd/controlC0" },
 	{ metrictime,		" metric: %s |",	NULL },
 	{ datetime,		" date: %s |",		"%F" },
 	{ datetime,		" time: %s |",		"%H:%M:%S" },
