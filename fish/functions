@@ -90,6 +90,10 @@ function cls
 	ls
 end
 
+function vd
+	vis-digraph $argv
+end
+
 #rlwrap is great
 
 #repls

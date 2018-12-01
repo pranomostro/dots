@@ -56,12 +56,16 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-l", "10", "-fn", dmenufont, "-nb", col_white, "-nf", col_black, "-sb", col_yellow, NULL };
-static const char *termcmd[]  = { "st" };
+static const char *termcmd[]  = { "st", NULL };
+static const char *louder[] = { "chv", "+10", NULL };
+static const char *silenter[] = { "chv", "-10", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_Up,     spawn,          {.v = louder } },
+	{ MODKEY,                       XK_Down,   spawn,          {.v = silenter } },
 	{ MODKEY,			XK_r,	   zoom,	   {0} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_e,      focusstack,     {.i = +1 } },
