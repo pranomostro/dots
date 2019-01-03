@@ -91,7 +91,7 @@ function cls
 end
 
 function vd
-	vis-digraph $argv
+	vis-digraph $argv | xsel -psb
 end
 
 #rlwrap is great
