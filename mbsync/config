@@ -3,7 +3,7 @@
 IMAPAccount gmail
 Host imap.gmail.com
 User pranomestro
-PassCmd "spm show pranomestro@gmail"
+PassCmd "spm show pranomestro@gmail@"
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
