@@ -30,7 +30,7 @@ host posteo.de
 #port 587
 port 465
 
-tls_fingerprint FB:28:42:1E:23:AD:8A:23:8B:AB:C1:ED:FD:86:FD:F5:30:C6:D9:35:E0:E6:D8:91:CD:F3:77:66:05:C5:75:33
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
 passwordeval "spm show pranomostro@posteo"
 user pranomostro@posteo.net

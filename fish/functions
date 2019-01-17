@@ -8,6 +8,10 @@ end
 
 #having default options to commands which are always useful.
 
+function sed
+	command sed -E $argv
+end
+
 function cl
 	command ls --color=always --group-directories-first $argv
 end
