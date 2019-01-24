@@ -1,4 +1,5 @@
 application/pgp-encrypted: dwpd -
+application/octet-stream dwpd -
 multipart/encrypted: mgpg -
 multipart/mixed: mgpg -
 multipart/signed: mgpg -

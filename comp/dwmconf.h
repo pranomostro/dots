@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -27,7 +27,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 9,       0,           -1 },
 };
 
 /* layout(s) */
@@ -59,6 +59,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-l", "10", "-fn"
 static const char *termcmd[]  = { "st", NULL };
 static const char *louder[] = { "chv", "+10", NULL };
 static const char *silenter[] = { "chv", "-10", NULL };
+static const char *sad_pause[] = { "echo", "pause", "1", "|", "nc", "-N", "-U", "/tmp/sad-sock", NULL };
+static const char *sad_play[] = { "echo", "pause", "0", "|", "nc", "-N", "-U", "/tmp/sad-sock", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -66,6 +68,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_Up,     spawn,          {.v = louder } },
 	{ MODKEY,                       XK_Down,   spawn,          {.v = silenter } },
+	{ MODKEY,			XK_p,	   spawn,	   {.v = sad_pause } },
+	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   {.v = sad_play } },
 	{ MODKEY,			XK_r,	   zoom,	   {0} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_e,      focusstack,     {.i = +1 } },
