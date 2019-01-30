@@ -94,10 +94,6 @@ function cls
 	ls
 end
 
-function vd
-	vis-digraph $argv | xsel -psb
-end
-
 #rlwrap is great
 
 #repls
