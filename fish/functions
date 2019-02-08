@@ -143,3 +143,9 @@ end
 function nano
 	sam $argv
 end
+
+# z, but with selection
+
+function sr
+	cd (find /usr/local /home/pranomostro -type d ^/dev/null | fzf)
+end
