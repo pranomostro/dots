@@ -15,6 +15,8 @@ $(HOME)/.config/fish/config.fish: $(DOTDIR)/fish/config
 	ln $? $@
 $(HOME)/.config/fish/functions.fish: $(DOTDIR)/fish/functions
 	ln $? $@
+$(HOME)/.config/fish/fish_variables: $(DOTDIR)/fish/variables
+	ln $? $@
 $(HOME)/.gdbinit: $(DOTDIR)/gdb/init
 	ln $? $@
 $(HOME)/.gitconfig: $(DOTDIR)/git/config

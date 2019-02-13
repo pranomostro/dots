@@ -11,6 +11,7 @@ DOTS= \
 	comp/stconf.h \
 	fish/config \
 	fish/functions \
+	fish/variables \
 	gdb/init \
 	git/config \
 	gpg/agentconf \
@@ -34,6 +35,7 @@ INSTALLED= \
 	$(HOME)/.bash_profile \
 	$(HOME)/.config/fish/config.fish \
 	$(HOME)/.config/fish/functions.fish \
+	$(HOME)/.config/fish/fish_variables \
 	$(HOME)/.gdbinit \
 	$(HOME)/.gitconfig \
 	$(HOME)/.gnupg/gpg-agent.conf \
