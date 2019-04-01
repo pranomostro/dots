@@ -1,0 +1,5 @@
+calendar = /home/pranomostro/.when/calendar
+editor = vis
+filter_accents_on_output=0
+future=1
+past=0

@@ -8,20 +8,21 @@ DOTS= \
 	ag/ignore \
 	bash/init \
 	bash/profile \
-	comp/stconf.h \
-	fish/config \
+	fish/conf \
 	fish/functions \
 	fish/variables \
 	gdb/init \
-	git/config \
+	git/conf \
 	gpg/agentconf \
 	gpg/conf \
-	mail/config \
+	input/conf \
+	mail/conf \
 	mblaze/filter \
 	mblaze/profile \
-	mbsync/config \
-	msmtp/config \
+	mbsync/conf \
+	msmtp/conf \
 	userdirs/dirs \
+	when/conf \
 	x/init \
 	x/neo \
 	comp/dwmconf.h \
@@ -40,11 +41,13 @@ INSTALLED= \
 	$(HOME)/.gitconfig \
 	$(HOME)/.gnupg/gpg-agent.conf \
 	$(HOME)/.gnupg/gpg.conf \
+	$(HOME)/.inputrc \
 	$(HOME)/.mailrc \
 	$(HOME)/.mblaze/filter \
 	$(HOME)/.mblaze/profile \
 	$(HOME)/.mbsyncrc \
 	$(HOME)/.msmtprc \
+	$(HOME)/.when/preferences \
 	$(HOME)/.xinitrc \
 	$(HOME)/.xmodmap \
 	$(SRCDIR)/dwm/config.h \
