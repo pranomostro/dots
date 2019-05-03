@@ -95,7 +95,6 @@ function cls
 end
 
 #rlwrap is great
-
 #repls
 
 function nc
@@ -104,10 +103,6 @@ end
 
 function rc
 	rlwrap -s 1000000 rc $argv
-end
-
-function ed
-	rlwrap -s 1000000 ed $argv
 end
 
 function lua
@@ -126,22 +121,8 @@ function ocaml
 	rlwrap -s 100000 ocaml $argv
 end
 
-#Just to troll a little bit
-
-function emacs
-	ed -r -s
-end
-
-function vim
-	info Ed
-end
-
-function vi
-	man ed
-end
-
-function nano
-	sam $argv
+function scm
+	rlwrap -s 100000 chibi-scheme $argv
 end
 
 # z, but with selection
