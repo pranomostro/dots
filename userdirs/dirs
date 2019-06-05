@@ -1,8 +1,1 @@
-XDG_DESKTOP_DIR="$HOME/.local/share/desktop"
 XDG_DOWNLOAD_DIR="$HOME/down"
-XDG_TEMPLATES_DIR="$HOME/trash"
-XDG_PUBLICSHARE_DIR="$HOME/.local/share/pub"
-XDG_DOCUMENTS_DIR="$HOME/trash"
-XDG_MUSIC_DIR="/usr/local/mus"
-XDG_PICTURES_DIR="$HOME/trash"
-XDG_VIDEOS_DIR="$HOME/trash"
