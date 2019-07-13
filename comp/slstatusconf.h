@@ -61,6 +61,7 @@ static const struct arg args[] = {
 	{ wifi_perc,		" wifi: %s%% |",	"wlp2s0" },
 	{ light,		" light: %s |",		"/sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight/brightness" },
 	{ run_command,		" vol: %s%% |",		"amixer -M get Master | sed -En '$s/^.*\\[([0-9]+)%\\].*/\\1/; $p'" },
+	{ entropy,		" ent: %s |",		NULL },
 	{ metrictime,		" metric: %s |",	NULL },
 	{ datetime,		" date: %s |",		"%F" },
 	{ datetime,		" time: %s |",		"%H:%M:%S" },
