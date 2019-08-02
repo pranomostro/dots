@@ -1,2 +1,9 @@
-bu
+lastmod=$(stat --format='%Y %n' /usr/local/backup/pranomostro/* | sort -n | tail -1 | field 1)
+timediff=$(echo $(date '+%s')'-'$lastmod | bc)
+
+# Incremental backup every 4 days, full backup every month
+if [ $timediff -gt 172800 ]; then
+        duplicity --full-if-older-than 1M incremental /home/pranomostro file:///usr/local/backup/pranomostro
+fi
+
 exec fish
