@@ -1,3 +1,5 @@
+rm -rf ~/.cache
+
 lastmod=$(stat --format='%Y %n' /usr/local/backup/pranomostro/* | sort -n | tail -1 | field 1)
 timediff=$(echo $(date '+%s')'-'$lastmod | bc)
 
