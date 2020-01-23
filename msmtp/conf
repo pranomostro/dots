@@ -18,7 +18,7 @@ port 465
 
 tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
-passwordeval "spm show pranomestro@gmail"
+passwordeval "spm show pranomestro@gmail@"
 user pranomestro
 from pranomestro@gmail.com
 
