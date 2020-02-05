@@ -9,7 +9,7 @@ xmodmap $HOME/.xmodmap
 xset -r 51
 
 bgs -R -C '#fefefe' '/usr/local/img/reward.png'
-redshift -b 1.0:0.4 -l 48.1:11.6 &
+redshift -b 1.0:0.7 -l 48.1:11.6 &
 slstatus &
 
 exec dwm
