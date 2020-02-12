@@ -34,7 +34,7 @@ tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
 passwordeval "spm show pranomostro@posteo"
 user pranomostro@posteo.net
-from pranomostro@posteo.net
+from adrian.regenfuss@posteo.de
 
 #set the default account
 account default: posteo
