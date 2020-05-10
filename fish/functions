@@ -35,7 +35,7 @@ end
 #silence is golden
 
 function bc
-	command bc -ql $argv
+	command bc -l $argv
 end
 
 function gdb
