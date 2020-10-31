@@ -21,6 +21,8 @@ $(HOME)/.gdbinit: $(DOTDIR)/gdb/init
 	ln $? $@
 $(HOME)/.gitconfig: $(DOTDIR)/git/conf
 	ln $? $@
+$(HOME)/.gitignore: $(DOTDIR)/git/ignore
+	ln $? $@
 $(HOME)/.gnupg/gpg-agent.conf: $(DOTDIR)/gpg/agentconf
 	ln $? $@
 $(HOME)/.gnupg/gpg.conf: $(DOTDIR)/gpg/conf

@@ -8,7 +8,7 @@ setxkbmap lv
 xmodmap $HOME/.xmodmap
 xset -r 51
 
-bgs -R -C '#fefefe' '/usr/local/img/reward.png'
+bgs -R -C '#fefefe' '/usr/local/img/aixi.png'
 redshift -b 1.0:0.5 -l 48.1:11.6 &
 slstatus &
 

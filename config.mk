@@ -13,6 +13,7 @@ DOTS= \
 	fish/variables \
 	gdb/init \
 	git/conf \
+	git/ignore \
 	gpg/agentconf \
 	gpg/conf \
 	input/conf \
@@ -38,6 +39,7 @@ INSTALLED= \
 	$(HOME)/.config/fish/functions.fish \
 	$(HOME)/.config/fish/fish_variables \
 	$(HOME)/.gdbinit \
+	$(HOME)/.gitignore \
 	$(HOME)/.gitconfig \
 	$(HOME)/.gnupg/gpg-agent.conf \
 	$(HOME)/.gnupg/gpg.conf \
